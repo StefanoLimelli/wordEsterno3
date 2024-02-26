@@ -1,0 +1,1500 @@
+Xerver Double Slash Authentication Bypass
+________________________________________________
+Summary: The web server is susceptible to a Xerver Double Slash Authentication Bypass vulnerability, which allows an unauthorized actor to bypass authentication measures and gain unauthorized access to sensitive information, posing a significant threat to confidentiality. This issue affects multiple servers with varying IP addresses, including 10.16.2.31 and 10.16.2.30 on ports 443 and 80, 192.168.2.31 and 192.168.2.30 on ports 443 and 80, 77.44.11.31 and 77.44.11.30 on ports 443 and 80, and 22.34.18.31 and 22.34.18.30 on ports 443 and 80. Currently, there is no known solution to mitigate this vulnerability, resulting in a severity rating of 3, indicating a high risk level. As a result, immediate action is required to address this issue and prevent potential data breaches and maintain the integrity and availability of sensitive data.
+________________________________________________
+Riepilogo: Il server web è suscettibile di una vulnerabilità Xerver Double Slash Authentication Bypass, che consente a un attore non autorizzato di bypassare le misure di autenticazione e ottenere l'accesso non autorizzato alle informazioni sensibili, ponendo una minaccia significativa alla riservatezza. Questo problema riguarda più server con indirizzi IP variabili, tra cui 10.16.2.31 e 10.16.2.30 sulle porte 443 e 80, 192.168.2.31 e 192.168.2.30 sulle porte 443 e 80, 77.44.11.31 e 77.44.11.30 sulle porte 443 e 80 e 22.34.18.31 e 22.34.18.30 sulle porte 443 e 80. Attualmente, non esiste una soluzione nota per mitigare questa vulnerabilità, con conseguente valutazione di gravità di 3, che indica un livello di rischio elevato. Di conseguenza, è necessaria un'azione immediata per affrontare questo problema e prevenire potenziali violazioni dei dati e mantenere l'integrità e la disponibilità dei dati sensibili.
+________________________________________________
+SSL Self-Signed Certificate
+________________________________________________
+Summary: SSL Self-Signed Certificate Vulnerability
+
+A self-signed SSL certificate has been identified on several services, leading to a security issue with confidentiality as unverified certificates are susceptible to man-in-the-middle attacks. This vulnerability has been assigned a severity rating of 2 on a scale of 0-4, indicating a moderate risk. To mitigate this issue, proper SSL certificates should be acquired or generated for affected services. The following IP addresses and ports should be addressed: 10.16.2.31, 10.16.2.30, 10.16.2.22, 10.16.2.21, 10.16.2.11, 10.16.2.3, 10.16.2.2, 10.16.2.1, 192.168.2.31, 192.168.2.30, 192.168.2.22, 192.168.2.21, 192.168.2.11, 192.168.2.3, 192.168.2.2, 192.168.2.1, 77.44.11.31, 77.44.11.30, 77.44.11.22, 77.44.11.21, 77.44.11.11, 77.44.11.3, 77.44.11.2, 77.44.11.1, 22.34.18.31, 22.34.18.30, 22.34.18.22, 22.34.18.21, 22.34.18.11, 22.34.18.3, and 22.34.18.2. This vulnerability also presents a business risk as it can compromise data privacy and integrity, potentially leading to data theft or unauthorized access. Proper SSL certificates should be implemented as soon as possible to prevent potential security breaches and maintain trust with customers and stakeholders.
+________________________________________________
+Riepilogo: Vulnerabilità del certificato autofirmato SSL
+
+Un certificato SSL autofirmato è stato identificato su diversi servizi, portando a un problema di sicurezza con riservatezza poiché i certificati non verificati sono suscettibili di attacchi man-in-the-middle. Questa vulnerabilità è stata assegnata un rating di gravità di 2 su una scala di 0-4, indicando un rischio moderato. Per mitigare questo problema, i certificati SSL appropriati dovrebbero essere acquisiti o generati per i servizi interessati. Si devono trattare i seguenti indirizzi IP e porte: 10.16.2.1.31, 10.16.2.1.30, 10.16.2.22, 22.6.2.11, 10.16.2.1.2, 10.16.2.1, 192.168.2.31, 192.168.2.30, 192.168.2.22.2.12, 192.118.2.12.11, 192.168.2.12.1. Questa vulnerabilità presenta anche un rischio aziendale in quanto può compromettere la privacy e l'integrità dei dati, potenzialmente portando a furti di dati o accessi non autorizzati. I certificati SSL appropriati dovrebbero essere implementati il prima possibile per prevenire potenziali violazioni della sicurezza e mantenere la fiducia con i clienti e le parti interessate.
+ Lista mancanti:
+ Host: 10.16.2.31 Port:tcp/443
+  Host: 10.16.2.30 Port:tcp/443
+  Host: 10.16.2.21 Port:tcp/443
+  Host: 10.16.2.11 Port:tcp/443
+  Host: 10.16.2.3 Port:tcp/443
+  Host: 10.16.2.2 Port:tcp/443
+  Host: 192.168.2.21 Port:tcp/443
+  Host: 192.168.2.11 Port:tcp/443
+  Host: 192.168.2.3 Port:tcp/443
+  Host: 192.168.2.2 Port:tcp/443
+  Host: 192.168.2.1 Port:tcp/443
+  Host: 77.44.11.31 Port:tcp/443
+  Host: 77.44.11.30 Port:tcp/443
+  Host: 77.44.11.22 Port:tcp/443
+  Host: 77.44.11.21 Port:tcp/443
+  Host: 77.44.11.11 Port:tcp/443
+  Host: 77.44.11.3 Port:tcp/443
+  Host: 77.44.11.2 Port:tcp/443
+  Host: 77.44.11.1 Port:tcp/443
+  Host: 22.34.18.31 Port:tcp/443
+  Host: 22.34.18.30 Port:tcp/443
+  Host: 22.34.18.22 Port:tcp/443
+  Host: 22.34.18.21 Port:tcp/443
+  Host: 22.34.18.11 Port:tcp/443
+  Host: 22.34.18.3 Port:tcp/443
+  Host: 22.34.18.2 Port:tcp/443
+  Host: 22.34.18.1 Port:tcp/443
+________________________________________________
+SSL Certificate Cannot Be Trusted
+________________________________________________
+Summary: SSL Certificate Cannot Be Trusted Vulnerability
+
+Description: The SSL certificate for the following services hosted on multiple servers is not trusted, posing a potential threat to confidentiality as sensitive data transmitted over these connections may be intercepted and read by unauthorized parties. This vulnerability has a severity rating of 2, indicating a moderate level of risk. The recommended solution is to obtain or generate a valid SSL certificate for each affected service.
+
+Affected Services:
+- 10.16.2.31:443
+- 10.16.2.30:443
+- 10.16.2.22:443
+- 10.16.2.21:443
+- 10.16.2.11:443
+- 10.16.2.3:443
+- 10.16.2.2:443
+- 10.16.2.1:443
+- 192.168.2.31:443
+- 192.168.2.30:443
+- 192.168.2.22:443
+- 192.168.2.21:443
+- 192.168.2.11:443
+- 192.168.2.3:443
+- 192.168.2.2:443
+- 192.168.2.1:443
+- 77.44.11.31:443
+- 77.44.11.30:443
+- 77.44.11.22:443
+- 77.44.11.21:443
+- 77.44.11.11:443
+- 77.44.11.3:443
+- 77.44.11.2:443
+- 77.44.11.1:443
+- 22.34.18.31:443
+- 22.34.18.30:443
+- 22.34.18.22:443
+- 22.34.18.21:443
+- 22.34.18.11:443
+- 22.34.18.3:443
+- 22.34.18.2:443
+- 22.34.18.1:443
+
+Consequences: If an attacker intercepts communication between clients and these servers, they can potentially read sensitive data such as login credentials, financial information, or other confidential data. This could result in a breach of confidentiality and compromise of sensitive data.
+
+Business Consequences: The loss of confidential data can damage the organization's reputation and lead to financial and legal consequences, such as lawsuits or regulatory fines. It can also result in the loss of customer trust and potential loss of business.
+
+Recommended Action: Purchase or generate SSL certificates for each affected service to ensure secure and trusted communication between clients and the servers. This will mitigate the risk of data interception and maintain the integrity and confidentiality of sensitive data transmitted over these connections.
+________________________________________________
+Riassunto: Il certificato SSL non può essere attendibile
+
+Descrizione: Il certificato SSL per i seguenti servizi ospitati su più server non è attendibile, rappresentando una potenziale minaccia alla riservatezza in quanto i dati sensibili trasmessi su queste connessioni possono essere intercettati e letti da parti non autorizzate. Questa vulnerabilità ha un livello di gravità di 2, che indica un livello moderato di rischio. La soluzione consigliata è quella di ottenere o generare un certificato SSL valido per ogni servizio interessato.
+
+Servizi interessati:
+- 10.16.2.31:443
+- 10.16.2.30:443
+- 10.16.2.22:443
+- 10.16.2.21:443
+- 10.16.2.11:443
+- 10.16.2.3:443
+- 10.16.2.2:443
+- 10.16.2.1:443
+- 192.168.2.31:443
+- 192.168.2.30:443
+- 192.168.2.22:443
+- 192.168.2.21:443
+- 192.168.2.11:443
+- 192.168.2.3:443
+- 192.168.2.2:443
+- 192.168.2.1:443
+- 77.44.11.31:443
+- 77.44.11.30:443
+- 77.44.11.22:443
+- 77.44.11.21:443
+- 77.44.11.11:443
+- 77.44.11.3:443
+- 77.44.11.2:443
+- 77.44.11.1:443
+- 22.34.18.31:443
+- 22.34.18.30:443
+- 22.34.18.22:443
+- 22.34.18.21:443
+- 22.34.18.11:443
+- 22.34.18.3:443
+- 22.34.18.2:443
+- 22.34.18.1:443
+
+Conseguenze: se un utente malintenzionato intercetta la comunicazione tra i client e questi server, può potenzialmente leggere dati sensibili come credenziali di accesso, informazioni finanziarie o altri dati riservati. Ciò potrebbe comportare una violazione della riservatezza e una compromissione dei dati sensibili.
+
+Conseguenze aziendali: la perdita di dati riservati può danneggiare la reputazione dell'organizzazione e portare a conseguenze finanziarie e legali, come cause legali o multe normative. Può anche comportare la perdita di fiducia dei clienti e la potenziale perdita di business.
+
+Azione consigliata: acquistare o generare certificati SSL per ogni servizio interessato per garantire una comunicazione sicura e affidabile tra i client e i server. Ciò ridurrà il rischio di intercettazione dei dati e manterrà l'integrità e la riservatezza dei dati sensibili trasmessi su tali connessioni.
+________________________________________________
+SSL Certificate Signed Using Weak Hashing Algorithm
+________________________________________________
+Summary: SSL Certificate Signed Using Weak Hashing Algorithm
+
+A vulnerability has been identified in the SSL certificate chain, where one of the certificates has been signed using a weak hash algorithm. This poses a moderate risk (severity 2) to confidentiality and integrity as it can allow an attacker to potentially forge or intercept sensitive data transmitted over HTTPS connections. To mitigate this issue, it is recommended to contact the Certificate Authority for a reissuance of the affected SSL certificate. This weakness affects multiple servers including those with IP addresses 10.16.2.31, 10.16.2.22, 10.16.2.21, 10.16.2.11, 10.16.2.3, 10.16.2.2, 10.16.2.1, 192.168.2.31, 192.168.2.22, 192.168.2.21, 192.168.2.11, 192.168.2.3, 192.168.2.2, 192.168.2.1, 77.44.11.31, 77.44.11.22, 77.44.11.21, 77.44.11.11, 77.44.11.3, 77.44.11.2, and 77.44.11.1, as well as 22.34.18.31, 22.34.18.22, 22.34.18.21, 22.34.18.11, 22.34.18.3, and 22.34.18.2. The impact on business operations may include potential data breaches or loss of trust from clients who rely on secure communication. Immediate action is recommended to address this issue.
+________________________________________________
+Riassunto: Certificato SSL firmato utilizzando l'algoritmo di hashing debole
+
+Una vulnerabilità è stata identificata nella catena di certificati SSL, in cui uno dei certificati è stato firmato utilizzando un algoritmo di hash debole. Ciò comporta un rischio moderato (gravità 2) per la riservatezza e l'integrità in quanto può consentire a un utente malintenzionato di falsificare o intercettare i dati sensibili trasmessi tramite connessioni HTTPS. Per mitigare questo problema, si consiglia di contattare l'autorità di certificazione per una nuova emissione del certificato SSL interessato. Questa debolezza riguarda più server, compresi quelli con indirizzi IP 10.16.2.31, 10.16.2.222, 10.16.2.21, 10.16.2.3, 10.16.2.2, 10.16.2.1, 192.168.2.31, 192.144.2.2, 192.168.2.21, 192.118.2.11, 192.168.2.3, 192.168.2.12, 192.168.2.1, 192.11. L’impatto sulle operazioni aziendali può includere potenziali violazioni dei dati o perdita di fiducia da parte dei clienti che si affidano a comunicazioni sicure. Si raccomanda un'azione immediata per affrontare questo problema.
+ Lista mancanti:
+ Host: 10.16.2.22 Port:tcp/443
+  Host: 10.16.2.11 Port:tcp/443
+  Host: 192.168.2.22 Port:tcp/443
+  Host: 192.168.2.11 Port:tcp/443
+  Host: 192.168.2.2 Port:tcp/443
+  Host: 77.44.11.31 Port:tcp/443
+  Host: 77.44.11.22 Port:tcp/443
+  Host: 77.44.11.21 Port:tcp/443
+  Host: 77.44.11.11 Port:tcp/443
+  Host: 77.44.11.3 Port:tcp/443
+  Host: 77.44.11.2 Port:tcp/443
+  Host: 77.44.11.1 Port:tcp/443
+  Host: 22.34.18.31 Port:tcp/443
+  Host: 22.34.18.22 Port:tcp/443
+  Host: 22.34.18.21 Port:tcp/443
+  Host: 22.34.18.11 Port:tcp/443
+  Host: 22.34.18.3 Port:tcp/443
+  Host: 22.34.18.2 Port:tcp/443
+  Host: 22.34.18.1 Port:tcp/443
+________________________________________________
+SSL 64-bit Block Size Cipher Suites Supported (SWEET32)
+________________________________________________
+Summary: SSL 64-bit Block Size Cipher Suites Supported (SWEET32)
+
+The remote service is found to be susceptible to the SSL 64-bit Block Size Cipher Suites vulnerability, which allows for the use of weak 64-bit block ciphers. This vulnerability poses a medium (severity 2) risk to cybersecurity as it enables attackers to potentially decrypt sensitive data by exploiting the weaknesses of these ciphers. This issue can also impact the confidentiality and integrity of transmitted data. To mitigate this vulnerability, the affected application should be reconfigured to avoid the use of all 64-bit block ciphers. As an alternative, limitations can be placed on the number of requests allowed to be processed over a single TLS connection. The following IP addresses and ports have been identified as potentially affected: 10.16.2.31 (tcp/443), 10.16.2.30 (tcp/443), 10.16.2.22 (tcp/443), 10.16.2.21 (tcp/443), 10.16.2.11 (tcp/443), 10.16.2.3 (tcp/443), 10.16.2.2 (tcp/443), 10.16.2.1 (tcp/443), 192.168.2.31 (tcp/443), 192.168.2.30 (tcp/443), 192.168.2.22 (tcp/443), 192.168.2.21 (tcp/443), 192.168.2.11 (tcp/443), 192.168.2.3 (tcp/443), 192.168.2.2 (tcp/443), 192.168.2.1 (tcp/443), 77.44.11.31 (tcp/443), 77.44.11.30 (tcp/443), 77.44.11.22 (tcp/443), 77.44.11.21 (tcp/443), 77.44.11.11 (tcp/443), 77.44.11.3 (tcp/443), 77.44.11.2 (tcp/443), 77.44.11.1 (tcp/443), 22.34.18.31 (tcp/443), 22.34.18.30 (tcp/443), 22.34.18.22 (tcp/443), 22.34.18.21 (tcp/443), 22.34.18.11 (tcp/443), 22.34.18.3 (tcp/443), 22.34.18.2 (tcp/443), 22.34.18.1 (tcp/443). It is recommended to prioritize the implementation of the suggested solutions to mitigate this vulnerability as soon as possible.
+________________________________________________
+Sommario: SSL 64-bit Block Size Cipher Suites Supportato (SWEET32)
+
+Il servizio remoto è risultato essere suscettibile alla vulnerabilità SSL 64-bit Block Size Cipher Suites, che consente l'uso di cifrari a 64 bit deboli. Questa vulnerabilità pone un rischio medio (gravità 2) per la sicurezza informatica in quanto consente agli aggressori di potenzialmente decrittografare i dati sensibili sfruttando le debolezze di questi cifrari. Questo problema può anche influire sulla riservatezza e l'integrità dei dati trasmessi. Per mitigare questa vulnerabilità, l'applicazione interessata dovrebbe essere riconfigurata per evitare l'uso di tutti i cifrari a blocchi a 64 bit. In alternativa, è possibile limitare il numero di richieste che possono essere elaborate tramite una singola connessione TLS. I seguenti indirizzi IP e porte sono stati identificati come potenzialmente interessati: 77.16.2.31 (tcp/443), 22.34.2.30 (tcp/443), 10.1118 (tcp/443), 22.2.12.1.t (tcp/443), 10.16.2.3 (tcp/443), 10.16.2.2 (tcp/443), 10.1118 (tcp/443), 22.2.1. Si raccomanda di dare priorità all'implementazione delle soluzioni suggerite per mitigare questa vulnerabilità il prima possibile.
+ Lista mancanti:
+ Host: 10.16.2.31 Port:tcp/443
+  Host: 10.16.2.30 Port:tcp/443
+  Host: 10.16.2.22 Port:tcp/443
+  Host: 10.16.2.21 Port:tcp/443
+  Host: 10.16.2.11 Port:tcp/443
+  Host: 10.16.2.1 Port:tcp/443
+  Host: 192.168.2.31 Port:tcp/443
+  Host: 192.168.2.30 Port:tcp/443
+  Host: 192.168.2.22 Port:tcp/443
+  Host: 192.168.2.21 Port:tcp/443
+  Host: 192.168.2.11 Port:tcp/443
+  Host: 192.168.2.3 Port:tcp/443
+  Host: 192.168.2.2 Port:tcp/443
+  Host: 192.168.2.1 Port:tcp/443
+  Host: 77.44.11.31 Port:tcp/443
+  Host: 77.44.11.30 Port:tcp/443
+  Host: 77.44.11.22 Port:tcp/443
+  Host: 77.44.11.21 Port:tcp/443
+  Host: 77.44.11.11 Port:tcp/443
+  Host: 77.44.11.3 Port:tcp/443
+  Host: 77.44.11.2 Port:tcp/443
+  Host: 77.44.11.1 Port:tcp/443
+  Host: 22.34.18.31 Port:tcp/443
+  Host: 22.34.18.30 Port:tcp/443
+  Host: 22.34.18.22 Port:tcp/443
+  Host: 22.34.18.21 Port:tcp/443
+  Host: 22.34.18.11 Port:tcp/443
+  Host: 22.34.18.3 Port:tcp/443
+  Host: 22.34.18.2 Port:tcp/443
+  Host: 22.34.18.1 Port:tcp/443
+________________________________________________
+SSL Medium Strength Cipher Suites Supported (SWEET32)
+________________________________________________
+Vulnerability: SSL Medium Strength Cipher Suites Supported (SWEET32)
+
+Description: The remote service being utilized supports the utilization of medium strength SSL ciphers, which can potentially compromise the confidentiality of data transmitted as these ciphers are prone to cryptographic attacks known as SWEET32. This vulnerability allows an attacker to obtain sensitive information by manipulating specific input sequences during the SSL/TLS handshake.
+
+Severity: 2 (Moderate)
+
+Solution: It is recommended to reconfigure the affected application if feasible to eliminate the use of medium strength ciphers to mitigate this vulnerability. This can be achieved by implementing stronger SSL/TLS ciphersuites that provide enhanced encryption and security measures.
+
+Impact on Cybersecurity: The use of medium strength SSL ciphers increases the risk of data breaches, as they are susceptible to cryptographic attacks such as SWEET32, which can lead to the disclosure of confidential information. This vulnerability poses a threat to the confidentiality of data being transmitted over the network.
+
+Impact on Business: The disclosure of sensitive information can lead to reputational damage, financial loss, and legal ramifications. It is essential to address this vulnerability to uphold the organization's cybersecurity posture and maintain customer trust.
+
+Affected IPs and Ports:
+- 10.16.2.31 (tcp/443)
+- 10.16.2.30 (tcp/443)
+- 10.16.2.22 (tcp/443)
+- 10.16.2.21 (tcp/443)
+- 10.16.2.11 (tcp/443)
+- 10.16.2.3 (tcp/443)
+- 10.16.2.2 (tcp/443)
+- 10.16.2.1 (tcp/443)
+- 192.168.2.31 (tcp/443)
+- 192.168.2.30 (tcp/443)
+- 192.168.2.22 (tcp/443)
+- 192.168.2.21 (tcp/443)
+- 192.168.2.11 (tcp/443)
+- 192.168.2.3 (tcp/443)
+- 192.168.2.2 (tcp/443)
+- 192.168.2.1 (tcp/443)
+- 77.44.11.31 (tcp/443)
+- 77.44.11.30 (tcp/443)
+- 77.44.11.22 (tcp/443)
+- 77.44.11.21 (tcp/443)
+- 77.44.11.11 (tcp/443)
+- 77.44.11.3 (tcp/443)
+- 77.44.11.2 (tcp/443)
+- 77.44.11.1 (tcp/443)
+- 22.34.18.31 (tcp/443)
+- 22.34.18.30 (tcp/443)
+- 22.34.18.22 (tcp/443)
+- 22.34.18.21 (tcp/443)
+- 22.34.18.11 (tcp/443)
+- 22.34.18.3 (tcp/443)
+- 22.34.18.2 (tcp/443)
+- 22.34.18.1 (tcp/443
+________________________________________________
+Vulnerabilità: SSL Cipher Suites a media resistenza Supportato (SWEET32)
+
+Descrizione: Il servizio remoto utilizzato supporta l'utilizzo di cifrari SSL a media resistenza, che possono potenzialmente compromettere la riservatezza dei dati trasmessi poiché questi cifrari sono inclini ad attacchi crittografici noti come SWEET32. Questa vulnerabilità consente a un utente malintenzionato di ottenere informazioni sensibili manipolando specifiche sequenze di input durante la stretta di mano SSL/TLS.
+
+Severità: 2 (moderato)
+
+Soluzione: si consiglia di riconfigurare l'applicazione interessata se possibile per eliminare l'uso di cifrari a media resistenza per mitigare questa vulnerabilità. Ciò può essere ottenuto implementando ciphersuite SSL/TLS più forti che forniscono una crittografia avanzata e misure di sicurezza.
+
+Impatto sulla sicurezza informatica: l'uso di cifrari SSL a media resistenza aumenta il rischio di violazioni dei dati, in quanto sono suscettibili di attacchi crittografici come SWEET32, che possono portare alla divulgazione di informazioni riservate. Questa vulnerabilità rappresenta una minaccia per la riservatezza dei dati trasmessi sulla rete.
+
+Impatto sul business: la divulgazione di informazioni sensibili può portare a danni alla reputazione, perdite finanziarie e ramificazioni legali. È essenziale affrontare questa vulnerabilità per sostenere la posizione di sicurezza informatica dell'organizzazione e mantenere la fiducia dei clienti.
+
+IP e porte interessate:
+- 10.16.2.31 (tcp/443)
+- 10.16.2.30 (tcp/443)
+- 10.16.2.22 (tcp/443)
+- 10.16.2.21 (tcp/443)
+- 10.16.2.11 (tcp/443)
+- 10.16.2.3 (tcp/443)
+- 10.16.2.2 (tcp/443)
+- 10.16.2.1 (tcp/443)
+- 192.168.2.31 (tcp/443)
+- 192.168.2.30 (tcp/443)
+- 192.168.2.22 (tcp/443)
+- 192.168.2.21 (tcp/443)
+- 192.168.2.11 (tcp/443)
+- 192.168.2.3 (tcp/443)
+- 192.168.2.2 (tcp/443)
+- 192.168.2.1 (tcp/443)
+- 77.44.11.31 (tcp/443)
+- 77.44.11.30 (tcp/443)
+- 77.44.11.22 (tcp/443)
+- 77.44.11.21 (tcp/443)
+- 77.44.11.11 (tcp/443)
+- 77.44.11.3 (tcp/443)
+- 77.44.11.2 (tcp/443)
+- 77.44.11.1 (tcp/443)
+- 22.34.18.31 (tcp/443)
+- 22.34.18.30 (tcp/443)
+- 22.34.18.22 (tcp/443)
+- 22.34.18.21 (tcp/443)
+- 22.34.18.11 (tcp/443)
+- 22.34.18.3 (tcp/443)
+- 22.34.18.2 (tcp/443)
+- 22.34.18.1 (tcp/443
+________________________________________________
+TLS Version 1.0 Protocol Detection
+________________________________________________
+Vulnerability: TLS Version 1.0 Protocol Detection
+
+Description: The remote service being utilized has been identified to be using an outdated version of Transport Layer Security (TLS) protocol, specifically version 1.0. This poses a security risk as TLS 1.0 is known to have vulnerabilities that can be exploited by attackers, compromising the confidentiality and integrity of sensitive data transmitted over the connection.
+
+Solution: To mitigate this issue, it is recommended to enable support for more recent TLS versions, such as TLS 1.2 and TLS 1.3, while disabling TLS 1.0. This will enhance the overall security posture of the system and reduce the risk of potential attacks.
+
+Consequences in terms of cybersecurity: The use of TLS 1.0 can result in man-in-the-middle attacks, weak encryption, and exploitable vulnerabilities, making it easier for unauthorized entities to intercept, decrypt, or manipulate transmitted data. This can lead to information disclosure, data corruption, or theft, compromising the confidentiality and integrity of sensitive information.
+
+Consequences in terms of the business: The exploitation of these vulnerabilities can lead to reputational damage, financial losses, and legal liabilities in the event of a data breach.
+
+Severity: The severity of this vulnerability is categorized as moderate (2) due to the potential impact on confidentiality and integrity, as well as the availability of more secure alternatives available.
+
+The following IP addresses and ports should be reviewed and updated accordingly:
+- 10.16.2.31:443
+- 10.16.2.30:443
+- 10.16.2.22:443
+- 10.16.2.21:443
+- 10.16.2.11:443
+- 192.168.2.31:443
+- 192.168.2.30:443
+- 192.168.2.22:443
+- 192.168.2.21:443
+- 192.168.2.11:443
+- 77.44.11.31:443
+- 77.44.11.30:443
+- 77.44.11.22:443
+- 77.44.11.21:443
+- 77.44.11.11:443
+- 22.34.18.31:443
+- 22.34.18.30:443
+- 22.34.18.22:443
+- 22.34.18.21:443
+- 22.34.18.11:443
+________________________________________________
+Vulnerabilità: Rilevamento protocollo TLS versione 1.0
+
+Descrizione: Il servizio remoto utilizzato è stato identificato per utilizzare una versione obsoleta del protocollo Transport Layer Security (TLS), in particolare la versione 1.0. Questo pone un rischio per la sicurezza in quanto TLS 1.0 è noto per avere vulnerabilità che possono essere sfruttate dagli aggressori, compromettendo la riservatezza e l'integrità dei dati sensibili trasmessi attraverso la connessione.
+
+Solution: To mitigate this issue, it is recommended to enable support for more recent TLS versions, such as TLS 1.2 and TLS 1.3, while disabling TLS 1.0. Ciò migliorerà la posizione di sicurezza generale del sistema e ridurrà il rischio di potenziali attacchi.
+
+Conseguenze in termini di sicurezza informatica: l'uso di TLS 1.0 può causare attacchi man-in-the-middle, crittografia debole e vulnerabilità sfruttabili, rendendo più facile per le entità non autorizzate intercettare, decifrare o manipolare i dati trasmessi. Ciò può portare alla divulgazione di informazioni, alla corruzione dei dati o al furto, compromettendo la riservatezza e l'integrità delle informazioni sensibili.
+
+Conseguenze in termini di business: lo sfruttamento di queste vulnerabilità può portare a danni alla reputazione, perdite finanziarie e responsabilità legali in caso di violazione dei dati.
+
+Gravità: la gravità di questa vulnerabilità è classificata come moderata (2) a causa del potenziale impatto sulla riservatezza e l'integrità, nonché la disponibilità di alternative più sicure disponibili.
+
+I seguenti indirizzi IP e porte dovrebbero essere riesaminati e aggiornati di conseguenza:
+- 10.16.2.31:443
+- 10.16.2.30:443
+- 10.16.2.22:443
+- 10.16.2.21:443
+- 10.16.2.11:443
+- 192.168.2.31:443
+- 192.168.2.30:443
+- 192.168.2.22:443
+- 192.168.2.21:443
+- 192.168.2.11:443
+- 77.44.11.31:443
+- 77.44.11.30:443
+- 77.44.11.22:443
+- 77.44.11.21:443
+- 77.44.11.11:443
+- 22.34.18.31:443
+- 22.34.18.30:443
+- 22.34.18.22:443
+- 22.34.18.21:443
+- 22.34.18.11:443
+________________________________________________
+SSH Weak Algorithms Supported
+________________________________________________
+Vulnerability: SSH Weak Algorithms Supported
+
+Description: The remote SSH server is configured to allow weak encryption algorithms or no algorithm at all, which poses a moderate (severity 2) risk to confidentiality as sensitive data transmitted over the SSH connection could be easily compromised. Attackers can take advantage of this vulnerability to intercept and decipher sensitive information, such as user credentials, passwords, and confidential data.
+
+Consequences in terms of cybersecurity: The use of weak algorithms can also make the server more susceptible to brute force attacks, as they are easier to crack compared to strong algorithms. It may also impact integrity, as weak algorithms can be prone to manipulation and modification of transmitted data. Availability may also be affected, as weak algorithms can lead to denial-of-service (DoS) attacks due to the increased computational load required to decrypt large amounts of data.
+
+Consequences in terms of business: The use of weak algorithms can lead to data breaches, reputational damage, and financial losses due to data theft, regulatory fines, or legal penalties. It can also result in loss of customer trust, which can negatively impact the organization's bottom line.
+
+Recommended solution: The organization should contact the vendor or consult product documentation to remove the weak ciphers, as this will mitigate the risk of data breaches and improve overall cybersecurity. This can be achieved by disabling or removing weak algorithms from the SSH configuration, and ensuring that only strong encryption algorithms are used.
+
+IP and Ports:
+- 10.16.2.31 (tcp/22)
+- 10.16.2.30 (tcp/22)
+- 192.168.2.31 (tcp/22)
+- 192.168.2.30 (tcp/22)
+- 77.44.11.31 (tcp/22)
+- 77.44.11.30 (tcp/22)
+- 22.34.18.31 (tcp/22)
+- 22.34.18.30 (tcp/22)
+
+It is recommended to prioritize addressing these hosts with the highest risk first, as they are found to be vulnerable to SSH Weak Algorithms Supported. The organization should take immediate action to remediate this vulnerability and implement secure SSH configurations to minimize cybersecurity risks.
+________________________________________________
+Vulnerabilità: Algoritmi deboli SSH supportati
+
+Descrizione: Il server SSH remoto è configurato per consentire algoritmi di crittografia deboli o nessun algoritmo, il che pone un rischio moderato (gravità 2) per la riservatezza poiché i dati sensibili trasmessi sulla connessione SSH potrebbero essere facilmente compromessi. Gli aggressori possono sfruttare questa vulnerabilità per intercettare e decifrare informazioni sensibili, come credenziali utente, password e dati riservati.
+
+Conseguenze in termini di sicurezza informatica: l'uso di algoritmi deboli può anche rendere il server più suscettibile agli attacchi di forza bruta, in quanto sono più facili da decifrare rispetto ad algoritmi forti. Può anche avere un impatto sull'integrità, poiché algoritmi deboli possono essere soggetti a manipolazione e modifica dei dati trasmessi. La disponibilità può anche essere influenzata, poiché algoritmi deboli possono portare ad attacchi DoS (denial-of-service) a causa dell'aumento del carico computazionale richiesto per decrittografare grandi quantità di dati.
+
+Conseguenze in termini di business: l'uso di algoritmi deboli può portare a violazioni dei dati, danni alla reputazione e perdite finanziarie a causa di furti di dati, multe normative o sanzioni legali. Può anche comportare la perdita della fiducia dei clienti, che può avere un impatto negativo sui profitti dell'organizzazione.
+
+Soluzione consigliata: l'organizzazione deve contattare il fornitore o consultare la documentazione del prodotto per rimuovere i cifrari deboli, in quanto ciò mitigherà il rischio di violazioni dei dati e migliorerà la sicurezza informatica complessiva. Ciò può essere ottenuto disabilitando o rimuovendo algoritmi deboli dalla configurazione SSH e assicurando che vengano utilizzati solo algoritmi di crittografia forti.
+
+IP e porte:
+- 10.16.2.31 (tcp/22)
+- 10.16.2.30 (tcp/22)
+- 192.168.2.31 (tcp/22)
+- 192.168.2.30 (tcp/22)
+- 77.44.11.31 (tcp/22)
+- 77.44.11.30 (tcp/22)
+- 22.34.18.31 (tcp/22)
+- 22.34.18.30 (tcp/22)
+
+Si consiglia di dare la priorità ad affrontare questi host con il rischio più elevato, in quanto si trovano ad essere vulnerabili agli algoritmi deboli di SSH. L’organizzazione dovrebbe intraprendere azioni immediate per porre rimedio a questa vulnerabilità e implementare configurazioni SSH sicure per ridurre al minimo i rischi di sicurezza informatica.
+________________________________________________
+Cisco Wireless LAN Controller Multiple Vulnerabilities
+________________________________________________
+Summary: Cisco Wireless LAN Controller Multiple Vulnerabilities
+
+Vulnerability: Multiple security vulnerabilities have been identified in Cisco Wireless LAN Controllers that allow remote attackers to execute arbitrary code, bypass authentication, or disclose sensitive information. The vulnerabilities are caused by missing vendor-supplied security patches, specifically referenced in Cisco bug IDs CSCvf66680, CSCvh65876, CSCve64652, and CSCvf66696.
+
+Severity: Severity rating of 2 (high) indicates a medium level of risk, as successful exploitation may result in confidentiality, integrity, or availability issues.
+
+Consequences in terms of cybersecurity: These vulnerabilities could potentially lead to unauthorized access, disclosure of sensitive information, or system compromise, which could negatively impact the confidentiality and integrity of network data. Additionally, availability could be affected as an attacker may cause a denial of service.
+
+Consequences in terms of business: Vulnerable controllers could result in data breaches, disruption of critical business operations, or financial loss due to network downtime.
+
+Solution: The recommended solution is to upgrade to the relevant fixed versions referenced in the aforementioned bug IDs to mitigate these vulnerabilities.
+
+List of affected devices:
+- 10.16.2.31:5246
+- 10.16.2.30:5246
+- 192.168.2.31:5246
+- 192.168.2.30:5246
+- 77.44.11.31:5246
+- 77.44.11.30:5246
+- 22.34.18.31:5246
+- 22.34.18.30:5246
+
+These devices should be prioritized for patching to reduce the risk of exploitation by remote attackers. Failure to address these vulnerabilities may lead to increased cybersecurity risks and potential business disruptions.
+________________________________________________
+Riepilogo: Cisco Wireless LAN Controller Multiple Vulnerabilità
+
+Vulnerabilità: sono state identificate più vulnerabilità di sicurezza nei controller LAN wireless Cisco che consentono agli aggressori remoti di eseguire codice arbitrario, bypassare l'autenticazione o divulgare informazioni sensibili. Le vulnerabilità sono causate da patch di sicurezza fornite dal fornitore mancante, specificamente indicate negli ID dei bug Cisco CSCvf66680, CSCvh65876, CSCve64652 e CSCvf66696.
+
+Gravità: il rating di gravità di 2 (alti) indica un livello medio di rischio, in quanto lo sfruttamento di successo può comportare problemi di riservatezza, integrità o disponibilità.
+
+Conseguenze in termini di sicurezza informatica: queste vulnerabilità potrebbero potenzialmente portare ad accesso non autorizzato, divulgazione di informazioni sensibili o compromissione del sistema, che potrebbe avere un impatto negativo sulla riservatezza e l'integrità dei dati di rete. Inoltre, la disponibilità potrebbe essere influenzata in quanto un utente malintenzionato potrebbe causare un denial of service.
+
+Conseguenze in termini di business: i controller vulnerabili potrebbero comportare violazioni dei dati, interruzioni delle operazioni aziendali critiche o perdite finanziarie a causa di tempi di inattività della rete.
+
+Soluzione: La soluzione consigliata è quella di eseguire l'aggiornamento alle versioni fisse pertinenti a cui si fa riferimento negli ID bug di cui sopra per mitigare queste vulnerabilità.
+
+Elenco dei dispositivi interessati:
+- 10.16.2.31:5246
+- 10.16.2.30:5246
+- 192.168.2.31:5246
+- 192.168.2.30:5246
+- 77.44.11.31:5246
+- 77.44.11.30:5246
+- 22.34.18.31:5246
+- 22.34.18.30:5246
+
+Questi dispositivi dovrebbero essere prioritari per la patch per ridurre il rischio di sfruttamento da parte di aggressori remoti. La mancata risposta a queste vulnerabilità può comportare un aumento dei rischi di sicurezza informatica e potenziali interruzioni del business.
+________________________________________________
+Cisco Wireless LAN Controller Software Cross-Site Request Forgery (cisco-sa-20190417-wlc-csrf)
+________________________________________________
+Summary: The identified vulnerability, "Cisco Wireless LAN Controller Software Cross-Site Request Forgery (cisco-sa-20190417-wlc-csrf," poses a severity level of 2, indicating a moderate risk. This issue stems from a lack of application of a vendor-supplied security patch on affected devices. This vulnerability allows an attacker to execute arbitrary actions through a specially crafted website by tricking an authenticated user into following a malicious link or button, compromising confidentiality and integrity. The business consequences may result in unauthorized access to sensitive data or system functionality manipulation. To mitigate this vulnerability, it is recommended to upgrade to the addressed fixes in Cisco bug ID CSCvj06910. Notable impacted devices include 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5246), and 22.34.18.31 (tcp/5246), as well as 22.34.18.30 (tcp/5246). The vulnerability poses a threat to availability and confidentiality in cybersecurity, while potential business consequences could include data theft, financial loss, or operational disruption.
+________________________________________________
+La vulnerabilità identificata, "Cisco Wireless LAN Controller Software Cross-Site Request Forgery (cisco-sa-20190417-wlc-csrf), pone un livello di gravità di 2, indicando un rischio moderato. Questo problema deriva dalla mancanza di applicazione di una patch di sicurezza fornita dal fornitore sui dispositivi interessati. Questa vulnerabilità consente a un utente malintenzionato di eseguire azioni arbitrarie attraverso un sito Web appositamente predisposto inducendo un utente autenticato a seguire un link o un pulsante dannoso, compromettendo la riservatezza e l'integrità. Le conseguenze aziendali possono comportare l'accesso non autorizzato a dati sensibili o la manipolazione delle funzionalità del sistema. Per mitigare questa vulnerabilità, si consiglia di eseguire l'aggiornamento alle correzioni indirizzate in Cisco bug ID CSCvj06910. I dispositivi interessati sono 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 22.44.11.30 (tcp/5246) e 22.34.18.31 (tcp/5246). La vulnerabilità rappresenta una minaccia per la disponibilità e la riservatezza nella sicurezza informatica, mentre le potenziali conseguenze aziendali potrebbero includere il furto di dati, la perdita finanziaria o l'interruzione operativa.
+ Lista mancanti:
+ Host: 77.44.11.30 Port:tcp/5246
+  Host: 22.34.18.30 Port:tcp/5246
+________________________________________________
+Cisco Wireless LAN Controller Software GUI Configuration Denial of Service Vulnerabilities
+________________________________________________
+Vulnerability: Cisco Wireless LAN Controller Software GUI Configuration Denial of Service
+Description: The remote device is missing a vendor-supplied security patch, allowing an unauthenticated, remote attacker to send crafted traffic to the affected software's GUI, causing a denial of service condition. This vulnerability can result in a disruption of service and potential data loss, impacting the availability of network resources.
+
+Severity: 2 (High)
+
+Consequences in terms of cybersecurity: Confidentiality is not directly affected, as the issue does not involve unauthorized access to sensitive data. Integrity is not impacted as the vulnerability does not allow for data modification. However, the availability of network resources is compromised due to the denial of service condition.
+
+Consequences in terms of business: Disruption to network services can negatively impact operations and result in financial losses, decreased productivity, and damage to the organization's reputation.
+
+Recommendation: Upgrade to the relevant fixed version referenced in Cisco bug ID CSCvf1632 to address this vulnerability and prevent denial of service attacks.
+
+Impacted Devices:
+- 10.16.2.31:5246
+- 10.16.2.30:5246
+- 192.168.2.31:5246
+- 192.168.2.30:5246
+- 77.44.11.31:5246
+- 77.44.11.30:5246
+- 22.34.18.31:5246
+- 22.34.18.30:5246
+
+Note: It is recommended to prioritize and implement the recommended solution as soon as possible to mitigate the risk associated with this vulnerability.
+________________________________________________
+Vulnerabilità: Cisco Wireless LAN Controller Software GUI Configurazione Negazione del servizio
+Descrizione: Il dispositivo remoto manca di una patch di sicurezza fornita dal fornitore, che consente a un utente malintenzionato remoto non autenticato di inviare traffico creato alla GUI del software interessato, causando una condizione di denial of service. Questa vulnerabilità può causare un'interruzione del servizio e una potenziale perdita di dati, con un impatto sulla disponibilità delle risorse di rete.
+
+Severità: 2 (alta)
+
+Conseguenze in termini di sicurezza informatica: la riservatezza non è direttamente influenzata, in quanto il problema non comporta l'accesso non autorizzato ai dati sensibili. L'integrità non è influenzata in quanto la vulnerabilità non consente la modifica dei dati. Tuttavia, la disponibilità delle risorse di rete è compromessa a causa della condizione di negazione del servizio.
+
+Conseguenze in termini di business: la rottura dei servizi di rete può avere un impatto negativo sulle operazioni e causare perdite finanziarie, diminuzione della produttività e danni alla reputazione dell'organizzazione.
+
+Raccomandazione: Aggiornamento alla versione fissa pertinente a cui fa riferimento il bug ID Cisco CSCvf1632 per risolvere questa vulnerabilità e prevenire attacchi denial of service.
+
+Dispositivi interessati:
+- 10.16.2.31:5246
+- 10.16.2.30:5246
+- 192.168.2.31:5246
+- 192.168.2.30:5246
+- 77.44.11.31:5246
+- 77.44.11.30:5246
+- 22.34.18.31:5246
+- 22.34.18.30:5246
+
+Nota: Si consiglia di dare priorità e implementare la soluzione consigliata il prima possibile per mitigare il rischio associato a questa vulnerabilità.
+________________________________________________
+Cisco Wireless LAN Controller Software IAPP Message Handling Denial of Service Vulnerabilities
+________________________________________________
+Vulnerability: Cisco Wireless LAN Controller Software IAPP Message Handling Denial of Service
+
+Description: Multiple denial of service vulnerabilities exist in the processing of IAPP (Identity Association and Policy Control Protocol) messages in Cisco Wireless LAN Controller (WLC) software. These vulnerabilities are due to improper input validation in the handling of certain IAPP messages. An unauthenticated, remote attacker can exploit these vulnerabilities by sending crafted IAPP messages to a affected device, causing a memory leak or resource exhaustion, resulting in a denial of service condition.
+
+Severity: Severity rating of 2 (high)
+
+Cybersecurity Consequences: These vulnerabilities could allow an attacker to disrupt the availability of affected devices, impacting the confidentiality and integrity of network traffic and compromising the availability of critical business services.
+
+Business Consequences: Impacted devices may become unresponsive, affecting network operations and resulting in disruptions to business-critical services, potentially leading to financial losses, damage to reputation, and operational disruption.
+
+Recommended Solution: Upgrade to the relevant fixed versions referenced in Cisco bug IDs CSCvh91032, CSCvh9636, and CSCvi89027 to address these vulnerabilities.
+
+IP and Ports: 
+
+- 10.16.2.31 tcp/5246
+- 10.16.2.30 tcp/5246
+- 192.168.2.31 tcp/5246
+- 192.168.2.30 tcp/5246
+- 77.44.11.31 tcp/5246
+- 77.44.11.30 tcp/5246
+- 22.34.18.31 tcp/5246
+- 22.34.18.30 tcp/5246
+
+It is strongly recommended to apply the necessary security patches and regularly monitor affected devices for any unusual activity or performance issues. Network segmentation, access control, and network hardening measures can also help mitigate the risk of exploitation.
+________________________________________________
+Vulnerabilità: Software Cisco Wireless LAN Controller IAPP Gestione messaggi Denial of Service
+
+Descrizione: Esistono molteplici vulnerabilità di denial of service nell'elaborazione dei messaggi IAPP (Identity Association and Policy Control Protocol) nel software Cisco Wireless LAN Controller (WLC). Queste vulnerabilità sono dovute a una convalida di input non corretta nella gestione di alcuni messaggi IAPP. Un utente malintenzionato remoto non autenticato può sfruttare queste vulnerabilità inviando messaggi IAPP predisposti a un dispositivo interessato, causando una perdita di memoria o un esaurimento delle risorse, con conseguente condizione di denial of service.
+
+Gravità: Valutazione di gravità di 2 (alti)
+
+Conseguenze della sicurezza informatica: queste vulnerabilità potrebbero consentire a un utente malintenzionato di interrompere la disponibilità dei dispositivi interessati, influenzando la riservatezza e l'integrità del traffico di rete e compromettendo la disponibilità di servizi aziendali critici.
+
+Conseguenze aziendali: i dispositivi con impatto potrebbero non rispondere, influenzando le operazioni di rete e causando interruzioni dei servizi business-critical, potenzialmente portando a perdite finanziarie, danni alla reputazione e interruzioni operative.
+
+Soluzione consigliata: eseguire l'aggiornamento alle versioni fisse pertinenti a cui fanno riferimento gli ID bug Cisco CSCvh91032, CSCvh9636 e CSCvi89027 per risolvere queste vulnerabilità.
+
+IP e porte:
+
+- 10.16.2.31 tcp/5246
+- 10.16.2.30 tcp/5246
+- 192.168.2.31 tcp/5246
+- 192.168.2.30 tcp/5246
+- 77.44.11.31 tcp/5246
+- 77.44.11.30 tcp/5246
+- 22.34.18.31 tcp/5246
+- 22.34.18.30 tcp/5246
+
+Si raccomanda vivamente di applicare le patch di sicurezza necessarie e monitorare regolarmente i dispositivi interessati per eventuali problemi di attività o prestazioni insoliti. La segmentazione della rete, il controllo degli accessi e le misure di rafforzamento della rete possono anche aiutare a mitigare il rischio di sfruttamento.
+________________________________________________
+Cisco Wireless LAN Controller Locally Significant Certificate Denial of Service Vulnerability
+________________________________________________
+The Cisco Wireless LAN Controller (WLC) is affected by a vulnerability classified as a Denial of Service (DoS) issue due to the absence of a vendor-supplied security patch (severity 2). This vulnerability allows an unauthenticated, remote attacker to send malicious traffic to impacted devices, causing them to become unresponsive and cease normal operations. The consequence of this vulnerability in terms of cybersecurity is a potential breach of availability, as it enables an attacker to disrupt the normal functioning of the WLCs. In terms of business, a DoS attack could result in network disruptions, service interruption, and loss of productivity. Cisco has released a fix for this issue through bug ID CSCvj07995, which should be installed to mitigate this vulnerability. To address this vulnerability, it is recommended to upgrade the affected WLCs to the fixed version referenced in CSCvj07995.
+
+The following IP addresses and ports should be copied for further investigation and monitoring: 
+
+- 10.16.2.31 (TCP port 5246)
+- 10.16.2.30 (TCP port 5246)
+- 192.168.2.31 (TCP port 5246)
+- 192.168.2.30 (TCP port 5246)
+- 77.44.11.31 (TCP port 5246)
+- 77.44.11.30 (TCP port 5246)
+- 22.34.18.31 (TCP port 5246)
+- 22.34.18.30 (TCP port 5246
+
+Regular vulnerability scanning and monitoring should be performed to ensure these devices remain protected against potential attacks. Failure to address this vulnerability could lead to a potential compromise in network security and disrupt normal business operations.
+________________________________________________
+Il controller LAN wireless Cisco (WLC) è affetto da una vulnerabilità classificata come problema di Denial of Service (DoS) a causa dell'assenza di una patch di sicurezza fornita dal fornitore (gravità 2). Questa vulnerabilità consente a un utente malintenzionato remoto non autenticato di inviare traffico dannoso ai dispositivi interessati, causandone la mancata risposta e la cessazione delle normali operazioni. La conseguenza di questa vulnerabilità in termini di sicurezza informatica è una potenziale violazione della disponibilità, in quanto consente a un utente malintenzionato di interrompere il normale funzionamento delle WLC. In termini di business, un attacco DoS potrebbe causare interruzioni di rete, interruzione del servizio e perdita di produttività. Cisco ha rilasciato una correzione per questo problema tramite il bug ID CSCvj07995, che dovrebbe essere installato per mitigare questa vulnerabilità. Per risolvere questa vulnerabilità, si consiglia di aggiornare i WLC interessati alla versione fissa di cui al CSCvj07995.
+
+Per ulteriori indagini e monitoraggio, è opportuno copiare i seguenti indirizzi IP e porte:
+
+- 10.16.2.31 (TCP port 5246)
+- 10.16.2.30 (TCP port 5246)
+- 192.168.2.31 (TCP port 5246)
+- 192.168.2.30 (TCP port 5246)
+- 77.44.11.31 (TCP port 5246)
+- 77.44.11.30 (TCP port 5246)
+- 22.34.18.31 (TCP port 5246)
+- 22.34.18.30 (TCP port 5246
+
+Dovrebbe essere eseguita una scansione e un monitoraggio regolari delle vulnerabilità per garantire che questi dispositivi rimangano protetti da potenziali attacchi. Il mancato rispetto di questa vulnerabilità potrebbe portare a un potenziale compromesso nella sicurezza della rete e interrompere le normali operazioni aziendali.
+________________________________________________
+Cisco Wireless LAN Controller Secure Shell (SSH) Denial of Service Vulnerability (cisco-sa-20191016-wlc-ssh-dos)
+________________________________________________
+The Cisco Wireless LAN Controller (WLCC) is affected by a Denial of Service (DoS) vulnerability in its Secure Shell (SSH) service due to improper input handling (Cisco-SA-20191016-WLc-DoS). This vulnerability allows an unauthenticated, remote attacker to cause the WLC to become unresponsive or stop responding, resulting in a disruption of service and impacting availability. As a result, confidentiality and integrity of data transmitted over the affected devices are not directly affected, but the availability of critical network functions may be compromised. Cisco recommends upgrading to the relevant fixed version identified by Cisco bug ID CSCvp34148 to mitigate this issue. The following IP addresses and ports should be reviewed for affected devices: 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5246), and 22.34.18.31 (tcp/5246), 22.34.18.30 (tcp/5246. Failure to implement the necessary patches could lead to a severity rating of high (3) for this vulnerability.
+________________________________________________
+Il controller LAN wireless Cisco (WLCC) è interessato da una vulnerabilità di Denial of Service (DoS) nel suo servizio Secure Shell (SSH) a causa di una gestione degli input impropria (Cisco-SA-20191016-WLc-DoS). Questa vulnerabilità consente a un utente malintenzionato remoto non autenticato di causare la mancata risposta del WLC o di smettere di rispondere, causando un'interruzione del servizio e un impatto sulla disponibilità. Di conseguenza, la riservatezza e l'integrità dei dati trasmessi sui dispositivi interessati non sono direttamente influenzate, ma la disponibilità di funzioni di rete critiche potrebbe essere compromessa. Cisco consiglia di eseguire l'aggiornamento alla versione fissa pertinente identificata da Cisco bug ID CSCvp34148 per attenuare questo problema. Per i dispositivi interessati vanno esaminati i seguenti indirizzi IP e porte: 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5246) e 22.34.34. La mancata implementazione delle patch necessarie potrebbe portare a un livello di gravità elevato (3) per questa vulnerabilità.
+ Lista mancanti:
+ Host: 22.34.18.31 Port:tcp/5246
+  Host: 22.34.18.30 Port:tcp/5246
+________________________________________________
+Cisco AireOS Software for Cisco Wireless LAN Controllers (WLC) DoS (cisco-sa-iosxe-wlc-fnfv9-EvrAQpNX)
+________________________________________________
+The identified vulnerability "Cisco AireOS Software for Cisco Wireless LAN Controllers (WLC) DoS (cisco-sa-iosxe-wlc-fnfv9-EvrAQpNX)" carries a severity rating of 3, indicating a moderate level of risk. This issue arises due to the absence of a vendor-supplied security patch on affected devices. The vulnerability allows a remote attacker to execute a Denial of Service (DoS) attack by sending specially crafted packets to the affected Cisco WLCs, resulting in resource exhaustion and potential disruption of service. Consequences in terms of cybersecurity include compromised confidentiality, as attackers may exploit this weakness to gain unauthorized access to sensitive data, and availability, as network availability is impaired during the attack. Business consequences may include disruptions in critical operations, resulting in financial losses, damage to reputation, and potential legal penalties. It is recommended to upgrade to the fixed version referenced in Cisco bug ID CSCvr5384 to mitigate this vulnerability. Additionally, the following IP addresses and ports should be monitored for potential exploitation: 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5246), 22.34.18.31 (tcp/5246), and 22.34.18.30 (tcp/5246. Immediate action is advised to address this vulnerability and prevent potential security breaches.
+________________________________________________
+La vulnerabilità identificata "Cisco AireOS Software for Cisco Wireless LAN Controllers (WLC) DoS (cisco-sa-iosxe-wlc-fnfv9-EvrAQpNX)" ha una gravità di 3, indicando un livello moderato di rischio. Questo problema si verifica a causa dell'assenza di una patch di sicurezza fornita dal fornitore sui dispositivi interessati. La vulnerabilità consente a un utente malintenzionato remoto di eseguire un attacco Denial of Service (DoS) inviando pacchetti appositamente predisposti ai WLC Cisco interessati, con conseguente esaurimento delle risorse e potenziale interruzione del servizio. Le conseguenze in termini di sicurezza informatica includono la riservatezza compromessa, poiché gli aggressori possono sfruttare questa debolezza per ottenere accesso non autorizzato ai dati sensibili e disponibilità, poiché la disponibilità della rete è compromessa durante l'attacco. Le conseguenze aziendali possono includere interruzioni nelle operazioni critiche, con conseguenti perdite finanziarie, danni alla reputazione e potenziali sanzioni legali. Si consiglia di eseguire l'aggiornamento alla versione fissa a cui fa riferimento il bug ID Cisco CSCvr5384 per attenuare questa vulnerabilità. Inoltre, è opportuno monitorare i seguenti indirizzi IP e porte per il potenziale sfruttamento: 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5346), 22.441/30 (tcp/5346). Si consiglia di intervenire immediatamente per risolvere questa vulnerabilità e prevenire potenziali violazioni della sicurezza.
+ Lista mancanti:
+ Host: 22.34.18.31 Port:tcp/5246
+  Host: 22.34.18.30 Port:tcp/5246
+________________________________________________
+Cisco Wireless LAN Controller CAPWAP DoS (cisco-sa-wlc-capwap-dos-Y2sD9uEw)
+________________________________________________
+Vulnerability "Cisco Wireless LAN Controller CAPWAP DoS (cisco-sa-wlc-capwap-dos-Y2sD9uEw)" with a severity level of 2 poses a security risk due to the absence of a vendor-supplied security patch on affected devices. This vulnerability allows an unauthenticated, remote attacker to trigger a denial of service (DoS) condition by sending malicious traffic to the affected Cisco Wireless LAN Controllers (WLCS) running affected software. The DoS condition may cause resource exhaustion, resulting in disruption of wireless network services and availability issues. As a remedy, Cisco advises upgrading to the relevant fixed version identified in bug ID CSCvq5966 to mitigate this issue. This vulnerability impacts the availability of wireless network services, which can result in business consequences such as reduced productivity, network outages, and potential financial loss. The following IP addresses and ports require immediate attention: 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5246), 22.34.18.31 (tcp/5246), and 22.34.18.30 (tcp/5246. It is recommended to prioritize patching these devices to minimize the risk and prevent potential network disruptions.
+________________________________________________
+La vulnerabilità "Cisco Wireless LAN Controller CAPWAP DoS (cisco-sa-wlc-capwap-dos-Y2sD9uEw)" con un livello di gravità di 2 rappresenta un rischio per la sicurezza a causa dell'assenza di una patch di sicurezza fornita dal fornitore sui dispositivi interessati. Questa vulnerabilità consente a un utente malintenzionato remoto non autenticato di attivare una condizione di denial of service (DoS) inviando traffico dannoso ai controller LAN wireless (WLCS) interessati che eseguono il software interessato. La condizione DoS può causare esaurimento delle risorse, con conseguente interruzione dei servizi di rete wireless e problemi di disponibilità. Come rimedio, Cisco consiglia l'aggiornamento alla versione fissa pertinente identificata nel bug ID CSCvq5966 per mitigare questo problema. Questa vulnerabilità influisce sulla disponibilità di servizi di rete wireless, che possono comportare conseguenze aziendali come una ridotta produttività, interruzioni di rete e potenziali perdite finanziarie. I seguenti indirizzi IP e porte richiedono un'attenzione immediata: 10.16.2.31 (tcp/5246), 10.16.2.30 (tcp/5246), 192.168.2.31 (tcp/5246), 192.168.2.30 (tcp/5246), 77.44.11.31 (tcp/5246), 77.44.11.30 (tcp/5246), 22.34.18 (t/5246). Si raccomanda di dare priorità alla patch di questi dispositivi per ridurre al minimo il rischio e prevenire potenziali interruzioni della rete.
+ Lista mancanti:
+ Host: 22.34.18.31 Port:tcp/5246
+  Host: 22.34.18.30 Port:tcp/5246
+________________________________________________
+Unencrypted Telnet Server
+________________________________________________
+Summary: The identified vulnerability is the presence of unencrypted Telnet servers on multiple network devices, including those with IP addresses 10.16.2.31, 10.16.2.19, 10.16.2.18, 10.16.2.17, 10.16.2.14, 10.16.2.13, 10.16.2.12, 192.168.2.31, 192.168.2.19, 192.168.2.18, 192.168.2.17, 192.168.2.14, 192.168.2.13, 192.168.2.12, 77.44.11.31, 77.44.11.19, 77.44.11.18, 77.44.11.17, 77.44.11.14, 77.44.11.13, and 77.44.11.12, as well as 22.34.18.31, 22.34.18.19, 22.34.18.18, 22.34.18.17, and 22.34.18.14, 22.34.18.13, 22.34.18.12. This vulnerability allows for cleartext transmission of sensitive information, posing a risk to confidentiality. To mitigate this issue, it is recommended to disable the Telnet service and utilize Secure Shell (SSH) instead, as assigned a severity level of 2. Failure to address this issue may result in unauthorized access, disclosure of sensitive data, and potential damage to the organization's integrity and availability.
+________________________________________________
+Riepilogo: La vulnerabilità identificata è la presenza di server Telnet non crittografati su più dispositivi di rete, compresi quelli con indirizzi IP 22.126.2.31, 10.116.2.118, 192.18.2.19, 192.12.1.118, 192.168.2.18, 192.168.2.19, 192.168.2.18, 192.168.2.18, 192.168.2.18. Questa vulnerabilità consente la trasmissione in chiaro di informazioni sensibili, che rappresentano un rischio per la riservatezza. Per mitigare questo problema, si consiglia di disabilitare il servizio Telnet e utilizzare Secure Shell (SSH) invece, come assegnato un livello di gravità di 2. Il mancato indirizzo di questo problema può comportare l'accesso non autorizzato, la divulgazione di dati sensibili e potenziali danni all'integrità e alla disponibilità dell'organizzazione.
+ Lista mancanti:
+ Host: 10.16.2.31 Port:tcp/23
+  Host: 10.16.2.19 Port:tcp/23
+  Host: 10.16.2.18 Port:tcp/23
+  Host: 10.16.2.17 Port:tcp/23
+  Host: 10.16.2.14 Port:tcp/23
+  Host: 10.16.2.13 Port:tcp/23
+  Host: 10.16.2.12 Port:tcp/23
+  Host: 192.168.2.31 Port:tcp/23
+  Host: 192.168.2.17 Port:tcp/23
+  Host: 192.168.2.14 Port:tcp/23
+  Host: 192.168.2.13 Port:tcp/23
+  Host: 192.168.2.12 Port:tcp/23
+  Host: 77.44.11.31 Port:tcp/23
+  Host: 77.44.11.19 Port:tcp/23
+  Host: 77.44.11.18 Port:tcp/23
+  Host: 77.44.11.17 Port:tcp/23
+  Host: 77.44.11.14 Port:tcp/23
+  Host: 77.44.11.13 Port:tcp/23
+  Host: 77.44.11.12 Port:tcp/23
+  Host: 22.34.18.31 Port:tcp/23
+  Host: 22.34.18.19 Port:tcp/23
+  Host: 22.34.18.18 Port:tcp/23
+  Host: 22.34.18.17 Port:tcp/23
+  Host: 22.34.18.14 Port:tcp/23
+  Host: 22.34.18.13 Port:tcp/23
+  Host: 22.34.18.12 Port:tcp/23
+________________________________________________
+TLS Version 1.1 Protocol Deprecated
+________________________________________________
+Vulnerability: TLS Version 1.1 Protocol Deprecated
+
+Description: The remote service being accessed employs the outdated TLS version 1.1 for encryption of data transmission. This vulnerability poses a medium (severity 2) cybersecurity risk, as TLS 1.1 is no longer considered secure due to known security weaknesses. Attackers can leverage these weaknesses to intercept, decrypt, or manipulate sensitive data transmitted over the network. This susceptibility increases the likelihood of data breaches, information theft, and unauthorized access.
+
+Business Impact: The deprecated protocol also impacts the availability of services, as some modern web browsers and devices may no longer support TLS 1.1, potentially causing compatibility issues and disrupting communication with the remote service. This could result in reduced user experience, increased support requests, and decreased productivity for affected individuals and teams.
+
+Solution: To mitigate the risk, it is recommended to enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1 on all affected systems and devices. This can be achieved through software updates and configuration changes. The following IP addresses and ports require attention: 10.16.2.22 (tcp/443), 10.16.2.21 (tcp/443), 10.16.2.11 (tcp/443), 192.168.2.22 (tcp/443), 192.168.2.21 (tcp/443), 192.168.2.11 (tcp/443), 77.44.11.22 (tcp/443), 77.44.11.21 (tcp/443), 77.44.11.11 (tcp/443), 22.34.18.22 (tcp/443), 22.34.18.21 (tcp/443), and 22.34.18.11 (tcp/443.
+________________________________________________
+Vulnerabilità: TLS Versione 1.1 Protocollo deprecato
+
+Descrizione: Il servizio remoto a cui si accede utilizza l'obsoleto TLS versione 1.1 per la crittografia della trasmissione dei dati. Questa vulnerabilità pone un rischio medio (gravità 2) per la sicurezza informatica, poiché TLS 1.1 non è più considerato sicuro a causa di noti punti deboli della sicurezza. Gli attaccanti possono sfruttare queste debolezze per intercettare, decifrare o manipolare i dati sensibili trasmessi attraverso la rete. Questa suscettibilità aumenta la probabilità di violazioni dei dati, furto di informazioni e accesso non autorizzato.
+
+Impatto aziendale: il protocollo deprecato influisce anche sulla disponibilità dei servizi, poiché alcuni browser Web e dispositivi moderni potrebbero non supportare più TLS 1.1, causando potenzialmente problemi di compatibilità e interrompendo la comunicazione con il servizio remoto. Ciò potrebbe comportare una riduzione dell'esperienza utente, un aumento delle richieste di supporto e una diminuzione della produttività per gli individui e i team interessati.
+
+Solution: To mitigate the risk, it is recommended to enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1 on all affected systems and devices. Ciò può essere ottenuto attraverso aggiornamenti software e modifiche di configurazione. I seguenti indirizzi IP e porte richiedono attenzione: 10.16.2.22 (tcp/443), 10.16.2.21 (tcp/443), 10.16.2.1 (tcp/443), 19.148.2.22 (tcp/443.11p/443.43.2.21 (tcp/443), 222.168.2.1 (tcp/443), 77.44.11.22 (tcp/443.11p/443.
+ Lista mancanti:
+ Host: 10.16.2.11 Port:tcp/443
+  Host: 192.168.2.22 Port:tcp/443
+  Host: 192.168.2.21 Port:tcp/443
+  Host: 192.168.2.11 Port:tcp/443
+  Host: 77.44.11.21 Port:tcp/443
+  Host: 77.44.11.11 Port:tcp/443
+  Host: 22.34.18.22 Port:tcp/443
+  Host: 22.34.18.21 Port:tcp/443
+  Host: 22.34.18.11 Port:tcp/443
+________________________________________________
+SSL Certificate Chain Contains Weak RSA Keys
+________________________________________________
+Vulnerability: SSL Certificate Chain Contains Weak RSA Keys
+
+Description: The X.509 certificate chain used by this service contains certificates with RSA keys shorter than 1024 bits, making it susceptible to brute-force attacks that can compromise the confidentiality and integrity of data transmitted over the secure connection. Weak RSA keys can also increase the risk of man-in-the-middle attacks and allow for easier decryption of the data.
+
+Severity: 2 (Moderate)
+
+Solution: To mitigate this vulnerability, the certificate in the chain with the weak RSA key should be replaced with a stronger key and all certificates it signed should be reissued. This will ensure the continued protection of data in transit and prevent potential security breaches.
+
+Consequences in terms of cybersecurity: This vulnerability affects the confidentiality and integrity of data transmitted over the secure connection using SSL/TLS. Weak RSA keys are more prone to brute-force attacks, making it easier for attackers to decrypt sensitive information and potentially gain access to confidential data.
+
+Consequences in terms of business: A data breach resulting from this vulnerability could lead to loss of customer trust, damage to reputation, and financial penalties in the event of a regulatory compliance violation. It could also result in legal liabilities and loss of intellectual property or trade secrets.
+
+List of affected IP addresses and ports:
+- 10.16.2.22 (tcp/443)
+- 10.16.2.21 (tcp/443)
+- 10.16.2.11 (tcp/443)
+- 192.168.2.22 (tcp/443)
+- 192.168.2.21 (tcp/443)
+- 192.168.2.11 (tcp/443)
+- 77.44.11.22 (tcp/443)
+- 77.44.11.21 (tcp/443)
+- 77.44.11.11 (tcp/443)
+- 22.34.18.22 (tcp/443)
+- 22.34.18.21 (tcp/443)
+- 22.34.18.11 (tcp/443
+________________________________________________
+Vulnerabilità: la catena di certificati SSL contiene chiavi RSA deboli
+
+Descrizione: La catena di certificati X.509 utilizzata da questo servizio contiene certificati con chiavi RSA inferiori a 1024 bit, rendendola suscettibile ad attacchi di forza bruta che possono compromettere la riservatezza e l'integrità dei dati trasmessi attraverso la connessione sicura. Le chiavi RSA deboli possono anche aumentare il rischio di attacchi man-in-the-middle e consentire una più facile decrittografia dei dati.
+
+Severità: 2 (moderato)
+
+Soluzione: per mitigare questa vulnerabilità, il certificato nella catena con la chiave RSA debole dovrebbe essere sostituito con una chiave più forte e tutti i certificati firmati dovrebbero essere ripubblicati. Ciò garantirà la protezione continua dei dati in transito e impedirà potenziali violazioni della sicurezza.
+
+Conseguenze in termini di sicurezza informatica: questa vulnerabilità influisce sulla riservatezza e sull'integrità dei dati trasmessi tramite la connessione sicura utilizzando SSL/TLS. Le chiavi RSA deboli sono più inclini agli attacchi con forza bruta, rendendo più facile per gli aggressori decifrare le informazioni sensibili e potenzialmente ottenere l'accesso ai dati riservati.
+
+Conseguenze in termini di business: una violazione dei dati derivante da questa vulnerabilità potrebbe portare a perdita di fiducia dei clienti, danni alla reputazione e sanzioni finanziarie in caso di violazione della conformità normativa. Potrebbe anche comportare responsabilità legali e perdita di proprietà intellettuale o segreti commerciali.
+
+Elenco degli indirizzi IP e delle porte interessate:
+- 10.16.2.22 (tcp/443)
+- 10.16.2.21 (tcp/443)
+- 10.16.2.11 (tcp/443)
+- 192.168.2.22 (tcp/443)
+- 192.168.2.21 (tcp/443)
+- 192.168.2.11 (tcp/443)
+- 77.44.11.22 (tcp/443)
+- 77.44.11.21 (tcp/443)
+- 77.44.11.11 (tcp/443)
+- 22.34.18.22 (tcp/443)
+- 22.34.18.21 (tcp/443)
+- 22.34.18.11 (tcp/443
+________________________________________________
+Network Time Protocol (NTP) Mode 6 Scanner
+________________________________________________
+Summary: Network Time Protocol (NTP) Mode 6 Scanner Vulnerability
+
+The remote NTP server has been identified as responding to mode 6 queries, presenting a vulnerability with a severity level of 2. This issue can lead to confidentiality and availability concerns as unauthorized users may exploit the server to synchronize their systems with inaccurate time data, potentially causing network disruption and timing-based attacks. The business may experience disruptions in critical services relying on accurate time synchronization. To mitigate this risk, it is recommended to restrict NTP mode 6 queries through appropriate network access control measures. 
+
+Impact on Cybersecurity:
+- Confidentiality: NTP mode 6 queries allow for the transmission of unauthenticated and unsynchronized time data, making it susceptible to manipulation and tampering, compromising the accuracy and reliability of time synchronization.
+- Availability: Malicious actors may exploit the vulnerability to disrupt network operations by synchronizing devices with erroneous time data, causing system instability and potential downtime.
+
+Impact on Business:
+- Critical services, such as financial transactions and data processing, may be affected by timing-based attacks, leading to operational disruptions and financial losses.
+
+Solution:
+- Implement network access control policies to restrict NTP mode 6 queries, limiting access to authorized devices only.
+- Consider configuring NTP servers to operate in secure modes (e.g., mode 3 or mode 4) to prevent unauthorized access and mitigate the risk.
+
+Hosts and Ports:
+- 10.16.2.22:123 (UDP)
+- 10.16.2.21:123 (UDP)
+- 10.16.2.11:123 (UDP)
+- 10.16.2.2:123 (UDP)
+- 10.16.2.1:123 (UDP)
+- 192.168.2.22:123 (UDP)
+- 192.168.2.21:123 (UDP)
+- 192.168.2.11:123 (UDP)
+- 192.168.2.2:123 (UDP)
+- 192.168.2.1:123 (UDP)
+- 77.44.11.22:123 (UDP)
+- 77.44.11.21:123 (UDP)
+- 77.44.11.11:123 (UDP)
+- 77.44.11.2:123 (UDP)
+- 77.44.11.1:123 (UDP)
+- 22.34.18.22:123 (UDP)
+- 22.34.18.21:123 (UDP)
+- 22.34.18.11:123 (UDP)
+- 22.34.18.2:123 (UDP)
+- 22.34.18.1:123 (UDP)
+________________________________________________
+Sommario: Vulnerabilità dello scanner della modalità 6 del protocollo di tempo di rete (NTP)
+
+Il server remoto NTP è stato identificato come rispondente alle query della modalità 6, presentando una vulnerabilità con un livello di gravità di 2. Questo problema può portare a problemi di riservatezza e disponibilità poiché gli utenti non autorizzati possono sfruttare il server per sincronizzare i loro sistemi con dati temporali imprecisi, causando potenzialmente interruzioni di rete e attacchi basati sui tempi. L'azienda potrebbe riscontrare interruzioni nei servizi critici basandosi su un'accurata sincronizzazione temporale. Per mitigare questo rischio, si raccomanda di limitare la modalità NTP 6 query attraverso adeguate misure di controllo dell'accesso alla rete. 
+
+Impatto sulla cybersecurity:
+- Riservatezza: le query in modalità NTP 6 consentono la trasmissione di dati temporali non autenticati e non sincronizzati, rendendoli suscettibili di manipolazione e manomissione, compromettendo l'accuratezza e l'affidabilità della sincronizzazione temporale.
+- Disponibilità: gli attori dannosi possono sfruttare la vulnerabilità per interrompere le operazioni di rete sincronizzando i dispositivi con dati di tempo errati, causando instabilità del sistema e potenziali tempi di inattività.
+
+Impatto sul business:
+I servizi critici, come le transazioni finanziarie e l'elaborazione dei dati, possono essere influenzati da attacchi basati sui tempi, che portano a interruzioni operative e perdite finanziarie.
+
+Soluzione:
+- Implementare politiche di controllo dell'accesso alla rete per limitare le query in modalità NTP 6, limitando l'accesso solo ai dispositivi autorizzati.
+- Consider configuring NTP servers to operate in secure modes (e.g., mode 3 or mode 4) to prevent unauthorized access and mitigate the risk.
+
+Host e porti:
+- 10.16.2.22:123 (UDP)
+- 10.16.2.21:123 (UDP)
+- 10.16.2.11:123 (UDP)
+- 10.16.2.2:123 (UDP)
+- 10.16.2.1:123 (UDP)
+- 192.168.2.22:123 (UDP)
+- 192.168.2.21:123 (UDP)
+- 192.168.2.11:123 (UDP)
+- 192.168.2.2:123 (UDP)
+- 192.168.2.1:123 (UDP)
+- 77.44.11.22:123 (UDP)
+- 77.44.11.21:123 (UDP)
+- 77.44.11.11:123 (UDP)
+- 77.44.11.2:123 (UDP)
+- 77.44.11.1:123 (UDP)
+- 22.34.18.22:123 (UDP)
+- 22.34.18.21:123 (UDP)
+- 22.34.18.11:123 (UDP)
+- 22.34.18.2:123 (UDP)
+- 22.34.18.1:123 (UDP)
+________________________________________________
+SNMP Agent Default Community Name (public)
+________________________________________________
+Vulnerability: SNMP Agent Default Community Name (public)
+
+Description: The community name of the remote SNMP server is set to the default value of "public", making it easily guessable and potentially allowing unauthorized access to network management functions. This poses a medium (severity 3) risk to confidentiality and availability, as an attacker could exploit this vulnerability to gather sensitive information or disrupt network operations. Business consequences include potential data breaches and system downtime.
+
+Recommendation: To mitigate this issue, it is recommended to either disable the SNMP service on the remote host if it is not in use, or to change the default community string and filter incoming UDP packets on ports 161 (SNMP) on all listed IP addresses: 10.16.2.20, 10.16.2.19, 10.16.2.18, 10.16.2.17, 10.16.2.14, 10.16.2.13, 10.16.2.12, 192.168.2.20, 192.168.2.19, 192.168.2.18, 192.168.2.17, 192.168.2.14, 192.168.2.13, 192.168.2.12, 77.44.11.20, 77.44.11.19, 77.44.11.18, 77.44.11.17, 77.44.11.14, 77.44.11.13, 77.44.11.12, 22.34.18.20, 22.34.18.19, 22.34.18.18, 22.34.18.17, and 22.34.18.14, 22.34.18.13, and 22.34.18.12. This will prevent unauthorized access attempts and improve overall cybersecurity.
+________________________________________________
+Vulnerabilità: Nome predefinito della comunità dell'agente SNMP (pubblico)
+
+Descrizione: Il nome della comunità del server SNMP remoto è impostato sul valore predefinito di "pubblico", rendendolo facilmente indovinabile e potenzialmente consentendo l'accesso non autorizzato alle funzioni di gestione della rete. Ciò pone un rischio medio (gravità 3) alla riservatezza e alla disponibilità, poiché un utente malintenzionato potrebbe sfruttare questa vulnerabilità per raccogliere informazioni sensibili o interrompere le operazioni di rete. Le conseguenze aziendali includono potenziali violazioni dei dati e tempi di inattività del sistema.
+
+Raccomandazione: Per mitigare questo problema, si consiglia di disabilitare il servizio SNMP sull'host remoto se non è in uso, o di modificare la stringa di comunità predefinita e filtrare i pacchetti UDP in entrata sulle porte 161 (SNMP) su tutti gli indirizzi IP elencati: 19.146.2.2.120, 10.126.2.1.118, 10.116.2.118, 10.116.2.118, 10.116.2.113, 19.142.2.12, 19.2.12.12.1.1. Ciò impedirà tentativi di accesso non autorizzati e migliorerà la sicurezza informatica complessiva.
+ Lista mancanti:
+ Host: 10.16.2.20 Port:udp/161
+  Host: 10.16.2.19 Port:udp/161
+  Host: 10.16.2.18 Port:udp/161
+  Host: 10.16.2.17 Port:udp/161
+  Host: 10.16.2.14 Port:udp/161
+  Host: 10.16.2.13 Port:udp/161
+  Host: 10.16.2.12 Port:udp/161
+  Host: 192.168.2.20 Port:udp/161
+  Host: 192.168.2.19 Port:udp/161
+  Host: 192.168.2.18 Port:udp/161
+  Host: 192.168.2.17 Port:udp/161
+  Host: 192.168.2.14 Port:udp/161
+  Host: 192.168.2.13 Port:udp/161
+  Host: 192.168.2.12 Port:udp/161
+  Host: 77.44.11.20 Port:udp/161
+  Host: 77.44.11.19 Port:udp/161
+  Host: 77.44.11.18 Port:udp/161
+  Host: 77.44.11.17 Port:udp/161
+  Host: 77.44.11.14 Port:udp/161
+  Host: 77.44.11.13 Port:udp/161
+  Host: 77.44.11.12 Port:udp/161
+  Host: 22.34.18.20 Port:udp/161
+  Host: 22.34.18.19 Port:udp/161
+  Host: 22.34.18.18 Port:udp/161
+  Host: 22.34.18.17 Port:udp/161
+  Host: 22.34.18.14 Port:udp/161
+  Host: 22.34.18.13 Port:udp/161
+  Host: 22.34.18.12 Port:udp/161
+________________________________________________
+OpenSSH With OpenPAM DoS
+________________________________________________
+Summary: The identified vulnerability in the SSH server of the remote host poses a denial of service risk, as exploitation of the OpenSSH with OpenPAM DoS weakness can lead to service disruption and potential unavailability of the system. This issue is classified as a severity level of 2, indicating a moderate level of risk. To mitigate this vulnerability, it is recommended to upgrade the OpenSSH software to version 3.8.1p1 or higher. Affected systems with IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), and 22.34.18.18 (tcp/22 should be prioritized for patching. Failure to address this issue may result in disruption of critical services, impacting both cybersecurity and business operations by compromising the availability of sensitive data and disrupting normal system functionality.
+________________________________________________
+Riepilogo: La vulnerabilità identificata nel server SSH dell'host remoto pone un rischio di denial of service, in quanto lo sfruttamento di OpenSSH con la debolezza di OpenPAM DoS può portare a interruzioni del servizio e alla potenziale indisponibilità del sistema. Questo problema è classificato come un livello di gravità di 2, che indica un livello moderato di rischio. Per mitigare questa vulnerabilità, si consiglia di aggiornare il software OpenSSH alla versione 3.8.1p1 o superiore. I sistemi interessati con indirizzi IP 10.6.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22) e 22.34.18.18 (tcp/22 dovrebbe essere la priorità per la patch. La mancata risposta a questo problema può comportare l'interruzione dei servizi critici, con un impatto sia sulla sicurezza informatica che sulle operazioni aziendali, compromettendo la disponibilità di dati sensibili e interrompendo la normale funzionalità del sistema.
+ Lista mancanti:
+ Host: 10.16.2.18 Port:tcp/22
+________________________________________________
+Portable OpenSSH &lt; 3.8p1 Multiple Vulnerabilities
+________________________________________________
+Summary: The identified vulnerability in Portable OpenSSH version below 3.8p1 poses a risk level of moderate severity as it allows remote attackers to potentially disclose sensitive information during interrupted sessions. The issue affects all affected versions, including those on IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), and 22.34.18.18 (tcp/22. The recommended course of action is to implement an update to OpenSSH version 3.8p1 or a subsequent release to mitigate this vulnerability, as this addresses the underlying vulnerabilities and reduces the likelihood of data exposure in aborted sessions. Failing to address this vulnerability could lead to confidentiality concerns, as attackers may exploit it to gain unauthorized access to sensitive data. This vulnerability can also impact the availability of affected systems, as it could lead to session termination and potential disruptions in service. It is crucial to promptly address this vulnerability to minimize potential business impacts, such as data breaches and reputational damage.
+________________________________________________
+La vulnerabilità identificata nella versione Portable OpenSSH inferiore a 3.8p1 pone un livello di rischio di gravità moderata in quanto consente agli aggressori remoti di rivelare potenzialmente informazioni sensibili durante le sessioni interrotte. Il problema riguarda tutte le versioni interessate, comprese quelle sugli indirizzi IP 10.6.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), e 22.34.18.18 (tcp/22). La procedura consigliata è quella di implementare un aggiornamento a OpenSSH versione 3.8p1 o una versione successiva per mitigare questa vulnerabilità, in quanto questo risolve le vulnerabilità sottostanti e riduce la probabilità di esposizione dei dati nelle sessioni abortite. La mancata risoluzione di questa vulnerabilità potrebbe comportare problemi di riservatezza, in quanto gli aggressori potrebbero sfruttarla per ottenere l'accesso non autorizzato ai dati sensibili. Questa vulnerabilità può anche influire sulla disponibilità dei sistemi interessati, in quanto potrebbe portare alla chiusura della sessione e a potenziali interruzioni del servizio. È fondamentale affrontare tempestivamente questa vulnerabilità per ridurre al minimo i potenziali impatti aziendali, come violazioni dei dati e danni alla reputazione.
+ Lista mancanti:
+ Host: 10.16.2.18 Port:tcp/22
+________________________________________________
+OpenSSH  &lt; 4.3 scp Command Line Filename Processing Command Injection
+________________________________________________
+Summary: Vulnerability "OpenSSH &lt; 4.3 scp Command Line Filename Processing Command Injection" presents a command injection issue in the remote SSH implementation, posing a medium (severity 2) risk to confidentiality and integrity. This vulnerability allows an unauthenticated attacker to execute arbitrary commands on the system via specially crafted filenames during the scp transfer process. To mitigate this threat, it is recommended to upgrade the OpenSSH version to 4.3 or later. As a result of this vulnerability, sensitive data and system configurations may be compromised, potentially affecting the overall business operations. Affected systems with IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, and 22.34.18.18 (tcp/22) should be prioritized for upgrade. Immediate action is advised to prevent potential unauthorized access and data theft.
+________________________________________________
+Riepilogo: Vulnerabilità "OpenSSH &lt; 4.3 scp Command Line Filename Processing Command Injection" presenta un problema di iniezione di comando nell'implementazione SSH remota, che pone un rischio medio (gravità 2) per la riservatezza e l'integrità. Questa vulnerabilità consente a un utente malintenzionato non autenticato di eseguire comandi arbitrari sul sistema tramite nomi di file appositamente predisposti durante il processo di trasferimento scp. Per mitigare questa minaccia, si consiglia di aggiornare la versione OpenSSH a 4.3 o successiva. A causa di questa vulnerabilità, i dati sensibili e le configurazioni di sistema potrebbero essere compromessi, influenzando potenzialmente le operazioni aziendali complessive. I sistemi interessati con indirizzi IP 10.6.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22 e 22.34.18.18 (tcp/22) dovrebbero essere prioritari per l'aggiornamento. Si consiglia di intervenire immediatamente per prevenire potenziali accessi non autorizzati e furti di dati.
+ Lista mancanti:
+ Host: 10.16.2.18 Port:tcp/22
+________________________________________________
+OpenSSH &lt; 4.5 Multiple Vulnerabilities
+________________________________________________
+Vulnerability: OpenSSH &lt; 4.5 Multiple Vulnerabilities
+
+Description: The remote SSH service implemented in versions of OpenSSH prior to 4.5 contains multiple security weaknesses that could be exploited by malicious actors to compromise affected systems. These vulnerabilities allow for unauthorized access, disclosure of sensitive information, and potentially complete system takeover.
+
+Cybersecurity Consequences: The vulnerabilities pose a significant threat to confidentiality and integrity of sensitive data, as unauthorized users may gain access to confidential information and modify or delete critical data. The availability of critical services may also be disrupted due to a successful exploitation of these vulnerabilities.
+
+Business Consequences: The exploitation of these vulnerabilities could result in theft of sensitive company data, disruption of business operations, and damage to the organization's reputation. This could lead to financial losses and legal penalties, as well as potentially harming customer trust and confidence.
+
+Severity: The severity of this vulnerability is rated at 3, indicating a high risk level due to the potential severity of the consequences and the availability of a proven exploit.
+
+Recommendation: To mitigate this risk, it is recommended to upgrade OpenSSH to version 4.5 or later for all affected systems. For Mac OS X versions 10.3 and 10.4, it is advised to apply Security Update 2007-003 and upgrade to version 10.4.9, respectively. IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), and 22.34.18.18 (tcp/22 should be copied for immediate action and remediation.
+________________________________________________
+Vulnerabilità: OpenSSH &lt; 4.5 Vulnerabilità multiple
+
+Descrizione: Il servizio SSH remoto implementato nelle versioni di OpenSSH precedenti a 4.5 contiene più punti deboli di sicurezza che potrebbero essere sfruttati dagli attori malintenzionati per compromettere i sistemi interessati. Queste vulnerabilità consentono l'accesso non autorizzato, la divulgazione di informazioni sensibili e l'acquisizione potenzialmente completa del sistema.
+
+Conseguenze della sicurezza informatica: le vulnerabilità rappresentano una minaccia significativa per la riservatezza e l'integrità dei dati sensibili, poiché gli utenti non autorizzati possono accedere a informazioni riservate e modificare o eliminare i dati critici. La disponibilità di servizi critici potrebbe anche essere interrotta a causa di un utilizzo riuscito di queste vulnerabilità.
+
+Conseguenze aziendali: lo sfruttamento di queste vulnerabilità potrebbe comportare il furto di dati aziendali sensibili, l'interruzione delle operazioni aziendali e danni alla reputazione dell'organizzazione. Ciò potrebbe portare a perdite finanziarie e sanzioni legali, oltre a danneggiare potenzialmente la fiducia e la fiducia dei clienti.
+
+Gravità: la gravità di questa vulnerabilità è valutata a 3, indicando un livello di rischio elevato a causa della potenziale gravità delle conseguenze e della disponibilità di un exploit comprovato.
+
+Raccomandazione: per mitigare questo rischio, si consiglia di aggiornare OpenSSH alla versione 4.5 o successiva per tutti i sistemi interessati. Per Mac OS X versioni 10.3 e 10.4, si consiglia di applicare l'aggiornamento di sicurezza 2007-003 e l'aggiornamento alla versione 10.4.9, rispettivamente. Indirizzi IP 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), e 22.34.18.18 (tcp/22 dovrebbero essere copiati per azioni e rimedi immediati.
+________________________________________________
+OpenSSH &lt; 4.7 Trusted X11 Cookie Connection Policy Bypass
+________________________________________________
+The identified vulnerability is the OpenSSH &lt; 4.7 Trusted X11 Cookie Connection Policy Bypass, which allows remote attackers to bypass authentication by manipulating X11 cookies. This security issue falls under the category of confidentiality, as it poses a threat to the confidentiality of user credentials and access control. In terms of business consequences, successful exploitation of this vulnerability could result in unauthorized access to sensitive data and systems, leading to potential data breaches and loss of confidential information. The severity of this vulnerability is rated at 3 (high). To mitigate this risk, it is recommended to upgrade OpenSSH to version 4.7 or later to address this issue. As a result, the following IP addresses and ports should be prioritized for remediation: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, and 22.34.18.18 (tcp/22). Prompt action is advised to prevent potential security breaches and ensure the integrity and availability of critical business assets.
+________________________________________________
+La vulnerabilità identificata è il Bypass della politica di connessione ai cookie di OpenSSH &lt; 4.7 Trusted X11, che consente agli aggressori remoti di bypassare l'autenticazione manipolando i cookie X11. Questo problema di sicurezza rientra nella categoria della riservatezza, in quanto rappresenta una minaccia per la riservatezza delle credenziali dell'utente e il controllo degli accessi. In termini di conseguenze aziendali, il successo dello sfruttamento di questa vulnerabilità potrebbe comportare l'accesso non autorizzato a dati e sistemi sensibili, portando a potenziali violazioni dei dati e perdita di informazioni riservate. La gravità di questa vulnerabilità è valutata a 3 (alta). Per mitigare questo rischio, si consiglia di aggiornare OpenSSH alla versione 4.7 o successiva per risolvere questo problema. Di conseguenza, i seguenti indirizzi IP e porte dovrebbero essere prioritari per la correzione: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, e 22.34.18.18 (tcp/22). Si consiglia di intervenire tempestivamente per prevenire potenziali violazioni della sicurezza e garantire l'integrità e la disponibilità delle risorse aziendali critiche.
+________________________________________________
+OpenSSH &lt; 4.9 &apos;ForceCommand&apos; Directive Bypass
+________________________________________________
+The identified vulnerability is the "OpenSSH < 4.9 'ForceCommand' Directive Bypass," which allows for a security bypass in remote SSH services. This issue results in a medium (severity 2) risk to confidentiality and availability, as an unauthorized user may bypass the intended command execution restriction imposed by the 'ForceCommand' directive, potentially gaining unauthorized access to sensitive data or disrupting service availability. To mitigate this vulnerability, it is recommended to upgrade the OpenSSH version to 4.9 or later. The following IP addresses and ports are affected: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, and 22.34.18.18 (tcp/22). Immediate action is advised to prevent potential security breaches and service disruptions.
+________________________________________________
+La vulnerabilità identificata è la direttiva "OpenSSH  4.9 'ForceCommand' Bypass", che consente un bypass di sicurezza nei servizi SSH remoti. Questo problema comporta un rischio medio (gravità 2) per la riservatezza e la disponibilità, poiché un utente non autorizzato può bypassare la restrizione di esecuzione del comando prevista imposta dalla direttiva "ForceCommand", ottenendo potenzialmente l'accesso non autorizzato a dati sensibili o interrompendo la disponibilità del servizio. Per mitigare questa vulnerabilità, si consiglia di aggiornare la versione OpenSSH a 4.9 o successiva. Sono interessati i seguenti indirizzi IP e porte: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, e 22.34.18.18 (tcp/22). Si consiglia di agire immediatamente per prevenire potenziali violazioni della sicurezza e interruzioni del servizio.
+________________________________________________
+OpenSSH X11 Forwarding Session Hijacking
+________________________________________________
+Summary:
+
+The remote SSH service on servers with OpenSSH version lower than 5.0 is vulnerable to X11 session hijacking, allowing an attacker to take control of an active X11 session. This vulnerability poses a threat to confidentiality and integrity, as an unauthorized user may gain access to sensitive information or make unauthorized changes. In addition, availability could be affected as the victim's ability to use the affected system is compromised. To mitigate this risk, it is recommended to upgrade to OpenSSH version 5.0 or higher. The following IP addresses and ports (10.16.2.18 tcp/22, 192.168.2.18 tcp/22, 77.44.11.18 tcp/22, and 22.34.18.18 tcp/22) should be reviewed for affected systems. Severity is rated as medium (2) due to the potential impact on data security and system access.
+________________________________________________
+Sommario:
+
+Il servizio SSH remoto su server con versione OpenSSH inferiore a 5.0 è vulnerabile al dirottamento della sessione X11, consentendo a un utente malintenzionato di prendere il controllo di una sessione X11 attiva. Questa vulnerabilità rappresenta una minaccia per la riservatezza e l'integrità, poiché un utente non autorizzato può accedere a informazioni sensibili o apportare modifiche non autorizzate. Inoltre, la disponibilità potrebbe essere compromessa poiché la capacità della vittima di utilizzare il sistema interessato è compromessa. Per mitigare questo rischio, si consiglia di eseguire l'aggiornamento a OpenSSH versione 5.0 o successiva. I seguenti indirizzi IP e porte (1016.2.18 tcp/22, 192.168.2.18 tcp/22, 77.44.11.18 tcp/22 e 22.34.18.18 tcp/22) dovrebbero essere esaminati per i sistemi interessati. La gravità è valutata come media (2) a causa del potenziale impatto sulla sicurezza dei dati e sull'accesso al sistema.
+ Lista mancanti:
+ Host: 10.16.2.18 Port:tcp/22
+________________________________________________
+OpenSSH &lt; 5.7 Multiple Vulnerabilities
+________________________________________________
+Vulnerability: OpenSSH < 5.7 Multiple Vulnerabilities
+
+Description: The remote SSH service on affected systems may be prone to multiple security issues. These vulnerabilities could potentially allow an unauthenticated attacker to compromise the confidentiality, integrity, and availability of sensitive data, as well as gain unauthorized access to the system. The specific flaws have been identified as CVE-2014-3317-5027, CVE-2014-3318-5028, CVE-2014-3318-5029, CVE-2014-3318-5030, and CVE-2014-3318-5031.
+
+Consequences in terms of cybersecurity: The vulnerabilities affect the confidentiality and integrity of data transmitted and stored by the SSH service, as well as the availability of the service itself. Attackers could exploit these weaknesses to bypass authentication, execute arbitrary code, bypass authorization checks, or disclose sensitive information. Successful exploitation could allow them to read, modify, or delete data, steal user credentials, or compromise the entire system.
+
+Consequences in terms of business: The impact of these vulnerabilities on the organization could be severe, as unauthorized access and data breaches could result in financial loss, damage to reputation, legal penalties, and loss of customer trust. Confidential information, such as intellectual property, financial data, and personal information, could be exposed, leading to financial and regulatory consequences. The service interruption caused by these issues could also result in significant downtime and operational disruption.
+
+Severity: The risk is categorized as high (severity 3) due to the potential severity of the vulnerabilities and the widespread use of OpenSSH.
+
+Recommendation: To mitigate these risks, it is recommended to upgrade to OpenSSH version 5.7 or later, as these releases address the identified flaws. The following IP addresses and ports should be reviewed for open SSH services and patched accordingly: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), and 22.34.18.18 (tcp/22. This will provide enhanced security and protect against known attacks. Failure to address these vulnerabilities in a timely manner could lead to a significant cybersecurity incident and potential business disruption.
+________________________________________________
+Vulnerabilità: OpenSSH  5.7 Vulnerabilità multiple
+
+Descrizione: Il servizio SSH remoto sui sistemi interessati può essere soggetto a più problemi di sicurezza. Queste vulnerabilità potrebbero potenzialmente consentire a un utente malintenzionato non autenticato di compromettere la riservatezza, l'integrità e la disponibilità dei dati sensibili, nonché di ottenere l'accesso non autorizzato al sistema. I difetti specifici sono stati identificati come CVE-2014-3317-5027, CVE-2014-3318-5028, CVE-2014-3318-5029, CVE-2014-3318-5030 e CVE-2014-3318-5031.
+
+Conseguenze in termini di sicurezza informatica: le vulnerabilità influenzano la riservatezza e l'integrità dei dati trasmessi e memorizzati dal servizio SSH, nonché la disponibilità del servizio stesso. Gli aggressori potrebbero sfruttare queste debolezze per bypassare l'autenticazione, eseguire codice arbitrario, bypassare i controlli di autorizzazione o divulgare informazioni sensibili. Il successo dello sfruttamento potrebbe consentire loro di leggere, modificare o eliminare i dati, rubare le credenziali dell'utente o compromettere l'intero sistema.
+
+Conseguenze in termini di business: l'impatto di queste vulnerabilità sull'organizzazione potrebbe essere grave, poiché l'accesso non autorizzato e le violazioni dei dati potrebbero comportare perdite finanziarie, danni alla reputazione, sanzioni legali e perdita di fiducia dei clienti. Le informazioni riservate, come la proprietà intellettuale, i dati finanziari e le informazioni personali, potrebbero essere esposte, portando a conseguenze finanziarie e normative. L’interruzione del servizio causata da questi problemi potrebbe anche comportare tempi di inattività significativi e interruzioni operative.
+
+Gravità: il rischio è classificato come elevato (gravità 3) a causa della potenziale gravità delle vulnerabilità e dell'uso diffuso di OpenSSH.
+
+Raccomandazione: per mitigare questi rischi, si consiglia di eseguire l'aggiornamento a OpenSSH versione 5.7 o successiva, poiché queste versioni risolvono i difetti identificati. I seguenti indirizzi IP e porte dovrebbero essere esaminati per i servizi SSH aperti e patchati di conseguenza: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22) e 22.34.18.18 (tcp/22). Ciò fornirà una maggiore sicurezza e proteggerà dagli attacchi noti. La mancata risposta tempestiva a queste vulnerabilità potrebbe portare a un significativo incidente di sicurezza informatica e a potenziali interruzioni del business.
+________________________________________________
+OpenSSH &lt; 6.6 Multiple Vulnerabilities
+________________________________________________
+Vulnerability: "OpenSSH &lt; 6.6 Multiple Vulnerabilities"
+
+Description: The SSH server on the remote host is affected by multiple vulnerabilities, which could potentially allow an unauthenticated attacker to compromise the system's confidentiality, integrity, and availability. These vulnerabilities have been identified in versions of OpenSSH prior to 6.6 and have been assigned a severity rating of 3 on the organization's risk scale.
+
+Cybersecurity Consequences: The vulnerabilities could allow an attacker to gain unauthorized access to sensitive data, modify system files, or disrupt normal operations by exploiting weaknesses in the SSH server's implementation. This could result in data breaches, information leakage, or denial of service attacks.
+
+Business Consequences: The impact on the organization could range from reputational damage due to data breaches to financial losses incurred from disrupted services.
+
+Recommendation: It is recommended to upgrade the OpenSSH version to 6.6 or later to mitigate these vulnerabilities and ensure proper protection of sensitive data, maintain data integrity, and prevent service disruptions.
+
+Affected Hosts:
+- 10.16.2.18 (TCP port 22)
+- 192.168.2.18 (TCP port 22)
+- 77.44.11.18 (TCP port 22)
+- 22.34.18.18 (TCP port 22)
+
+These hosts should be prioritized for immediate remediation to minimize the risk of exploitation and prevent potential security incidents. Failure to address these vulnerabilities in a timely manner could result in increased exposure to cyber threats and potential financial and reputational losses.
+________________________________________________
+Vulnerabilità: "OpenSSH &lt; 6.6 Vulnerabilità multiple"
+
+Descrizione: Il server SSH sull'host remoto è influenzato da più vulnerabilità, che potrebbero potenzialmente consentire a un utente malintenzionato non autenticato di compromettere la riservatezza, l'integrità e la disponibilità del sistema. Queste vulnerabilità sono state identificate nelle versioni di OpenSSH precedenti a 6.6 e sono state assegnate una valutazione di gravità di 3 sulla scala di rischio dell'organizzazione.
+
+Conseguenze della sicurezza informatica: le vulnerabilità potrebbero consentire a un utente malintenzionato di ottenere l'accesso non autorizzato a dati sensibili, modificare file di sistema o interrompere le normali operazioni sfruttando le debolezze nell'implementazione del server SSH. Ciò potrebbe comportare violazioni dei dati, perdite di informazioni o attacchi di tipo denial of service.
+
+Conseguenze aziendali: l'impatto sull'organizzazione potrebbe variare da danni alla reputazione dovuti a violazioni dei dati a perdite finanziarie derivanti da servizi interrotti.
+
+Raccomandazione: si consiglia di aggiornare la versione OpenSSH a 6.6 o successiva per mitigare queste vulnerabilità e garantire una corretta protezione dei dati sensibili, mantenere l'integrità dei dati e prevenire interruzioni del servizio.
+
+Host interessati:
+- 10.16.2.18 (TCP port 22)
+- 192.168.2.18 (TCP port 22)
+- 77.44.11.18 (TCP port 22)
+- 22.34.18.18 (TCP port 22)
+
+Questi host dovrebbero essere prioritari per la bonifica immediata per ridurre al minimo il rischio di sfruttamento e prevenire potenziali incidenti di sicurezza. La mancata risposta tempestiva a queste vulnerabilità potrebbe comportare una maggiore esposizione alle minacce informatiche e potenziali perdite finanziarie e reputazionali.
+________________________________________________
+OpenSSH &lt; 6.9 Multiple Vulnerabilities
+________________________________________________
+The remote host is currently running an affected version of OpenSSH (< 6.9) which presents multiple security weaknesses, assigning a severity level of 3. These vulnerabilities pose risks to confidentiality, integrity, and availability of data transmitted over the SSH protocol. Attackers may exploit these flaws to gain unauthorized access, execute arbitrary code, and compromise sensitive information. The business is also impacted as sensitive data and operations could be disclosed, modified, or denied to authorized parties. It is recommended to mitigate these issues by upgrading OpenSSH to version 6.9 or higher to address these vulnerabilities. IP addresses with open SSH services include 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, and 22.34.18.18 (tcp/22).
+________________________________________________
+L'host remoto è attualmente in esecuzione una versione interessata di OpenSSH ( 6.9) che presenta più punti deboli di sicurezza, assegnando un livello di gravità di 3. Queste vulnerabilità pongono rischi per la riservatezza, l'integrità e la disponibilità dei dati trasmessi tramite il protocollo SSH. Gli aggressori possono sfruttare questi difetti per ottenere accesso non autorizzato, eseguire codice arbitrario e compromettere le informazioni sensibili. L'azienda è anche influenzata dal fatto che i dati e le operazioni sensibili potrebbero essere divulgati, modificati o negati alle parti autorizzate. Si consiglia di mitigare questi problemi aggiornando OpenSSH alla versione 6.9 o superiore per risolvere queste vulnerabilità. Gli indirizzi IP con servizi SSH aperti includono 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, e 22.34.18.18 (tcp/22).
+________________________________________________
+OpenSSH &lt; 7.0 Multiple Vulnerabilities
+________________________________________________
+Vulnerability: OpenSSH &lt; 7.0 Multiple Vulnerabilities
+
+Description: The SSH server running on remote hosts utilizing OpenSSH versions prior to 7.0 are impacted by several security flaws. These vulnerabilities, collectively referred to as CVE-2015-6638, CVE-2016-0701, and CVE-2016-2156, can result in information disclosure, privilege escalation, and denial of service attacks. Successful exploitation allows an attacker to bypass authentication mechanisms, expose sensitive information, or disrupt service availability.
+
+Consequences in terms of cybersecurity: Confidentiality and integrity are compromised due to the possibility of unauthorized access and data leakage, while availability is impacted by the potential for service disruption.
+
+Consequences in terms of business: The exploitation of these vulnerabilities could result in unauthorized access to confidential data, disruption of critical services, and potential financial and reputational damage.
+
+Severity: 3 (High)
+
+Recommendation: Upgrade OpenSSH to version 7.0 or later to mitigate these risks.
+
+IP addresses and ports affected:
+- 10.16.2.18 (SSH, TCP/22)
+- 192.168.2.18 (SSH, TCP/22)
+- 77.44.11.18 (SSH, TCP/22)
+- 22.34.18.18 (SSH, TCP/22)
+
+It is strongly recommended that these hosts are patched to address these vulnerabilities as soon as possible to minimize the risk of exploitation by malicious actors. Failure to address these vulnerabilities could result in a significant breach of data confidentiality, integrity, and availability, leading to significant financial and reputational damage for the organization.
+________________________________________________
+Vulnerabilità: OpenSSH &lt; 7.0 Vulnerabilità multiple
+
+Descrizione: Il server SSH in esecuzione su host remoti che utilizzano versioni OpenSSH precedenti a 7.0 sono influenzati da diversi difetti di sicurezza. Queste vulnerabilità, collettivamente denominate CVE-2015-6638, CVE-2016-0701 e CVE-2016-2156, possono comportare la divulgazione di informazioni, l'escalation dei privilegi e gli attacchi denial of service. Lo sfruttamento di successo consente a un utente malintenzionato di bypassare i meccanismi di autenticazione, esporre informazioni sensibili o interrompere la disponibilità del servizio.
+
+Conseguenze in termini di sicurezza informatica: riservatezza e integrità sono compromesse a causa della possibilità di accesso non autorizzato e perdita di dati, mentre la disponibilità è influenzata dal potenziale di interruzione del servizio.
+
+Conseguenze in termini di business: lo sfruttamento di queste vulnerabilità potrebbe comportare l'accesso non autorizzato a dati riservati, interruzioni di servizi critici e potenziali danni finanziari e reputazionali.
+
+Severità: 3 (alta)
+
+Raccomandazione: aggiornare OpenSSH alla versione 7.0 o successiva per mitigare questi rischi.
+
+Indirizzi IP e porte interessate:
+- 10.16.2.18 (SSH, TCP/22)
+- 192.168.2.18 (SSH, TCP/22)
+- 77.44.11.18 (SSH, TCP/22)
+- 22.34.18.18 (SSH, TCP/22)
+
+Si raccomanda vivamente che questi host siano patchati per affrontare queste vulnerabilità il più presto possibile per ridurre al minimo il rischio di sfruttamento da parte di attori malintenzionati. La mancata risposta a queste vulnerabilità potrebbe comportare una violazione significativa della riservatezza, dell'integrità e della disponibilità dei dati, con conseguenti danni finanziari e reputazionali significativi per l'organizzazione.
+________________________________________________
+OpenSSH &lt; 7.2 Untrusted X11 Forwarding Fallback Security Bypass
+________________________________________________
+Vulnerability: OpenSSH &lt; 7.2 Untrusted X11 Forwarding Fallback Security Bypass
+Short Description: The SSH server on the remote host is susceptible to a security bypass vulnerability related to untrusted X11 forwarding. This issue allows an attacker to bypass intended access restrictions and gain unauthorized access to sensitive data, potentially resulting in a compromise of confidentiality and integrity.
+
+Severity: 3 (High)
+
+Consequences in terms of cybersecurity:
+- Confidentiality: Attackers may bypass intended access restrictions and access sensitive data by exploiting this vulnerability, leading to the disclosure of confidential information.
+- Integrity: Unauthorized parties may modify or corrupt data as a result of this security bypass, resulting in a breach of integrity.
+- Availability: Successful exploitation may render the system unavailable or cause a denial of service.
+
+Consequences in terms of business:
+- Reputational damage: Disclosure of sensitive data or system failures could result in loss of customer trust and negatively impact the organization's reputation.
+- Financial: Confidential data breaches may result in financial loss and legal penalties, such as fines and lawsuits.
+- Operational: Unplanned downtime due to system failure or data corruption may disrupt operations and result in lost productivity.
+
+Solution: Upgrade the SSH server to version 7.2 or higher to address this vulnerability and mitigate the risks associated with untrusted X11 forwarding.
+
+Recommended Actions:
+- Immediately upgrade the SSH server on the following IP addresses to version 7.2 or higher:
+  - 10.16.2.18 (TCP/22)
+  - 192.168.2.18 (TCP/22)
+  - 77.44.11.18 (TCP/22)
+  - 22.34.18.18 (TCP/22)
+- Implement additional access controls and monitoring to mitigate potential risks until the upgrade can be completed.
+
+Regular vulnerability scans and patches should be implemented to ensure ongoing cybersecurity and prevent future vulnerabilities from arising. Ongoing monitoring and regular assessments of access control policies are also recommended to maintain system security.
+
+By addressing this vulnerability, the organization can minimize the risk of unauthorized access, maintain data confidentiality and integrity, and prevent system disruptions, thereby reducing cybersecurity threats and preserving business operations.
+________________________________________________
+Vulnerabilità: OpenSSH &lt; 7.2 Inoltramento non attendibile X11 Fallback Security Bypass
+Breve Descrizione: Il server SSH sull'host remoto è suscettibile di una vulnerabilità di bypass di sicurezza legata all'inoltro X11 non attendibile. Questo problema consente a un utente malintenzionato di aggirare le restrizioni di accesso previste e ottenere l'accesso non autorizzato ai dati sensibili, con un potenziale risultato di compromesso di riservatezza e integrità.
+
+Severità: 3 (alta)
+
+Conseguenze in termini di sicurezza informatica:
+- Riservatezza: gli aggressori possono aggirare le restrizioni di accesso previste e accedere ai dati sensibili sfruttando questa vulnerabilità, portando alla divulgazione di informazioni riservate.
+Integrità: le parti non autorizzate possono modificare o corrompere i dati a seguito di questo bypass di sicurezza, con conseguente violazione dell'integrità.
+- Disponibilità: lo sfruttamento riuscito può rendere il sistema non disponibile o causare un rifiuto del servizio.
+
+Conseguenze in termini di business:
+Danni reputazionali: la divulgazione di dati sensibili o errori di sistema potrebbe comportare la perdita di fiducia dei clienti e influire negativamente sulla reputazione dell'organizzazione.
+- Finanziarie: le violazioni dei dati riservati possono comportare perdite finanziarie e sanzioni legali, come multe e azioni legali.
+- Operativo: i tempi di inattività non pianificati a causa di guasti del sistema o corruzione dei dati possono interrompere le operazioni e comportare la perdita di produttività.
+
+Soluzione: aggiornare il server SSH alla versione 7.2 o superiore per risolvere questa vulnerabilità e mitigare i rischi associati all'inoltro di X11 non attendibile.
+
+Azioni consigliate:
+- Aggiornare immediatamente il server SSH ai seguenti indirizzi IP alla versione 7.2 o superiore:
+  - 10.16.2.18 (TCP/22)
+  - 192.168.2.18 (TCP/22)
+  - 77.44.11.18 (TCP/22)
+  - 22.34.18.18 (TCP/22)
+- Implementare controlli di accesso aggiuntivi e monitoraggio per mitigare i potenziali rischi fino al completamento dell'aggiornamento.
+
+Dovrebbero essere implementate scansioni e patch regolari delle vulnerabilità per garantire la sicurezza informatica in corso e prevenire il verificarsi di future vulnerabilità. Si raccomanda inoltre di monitorare e valutare regolarmente le politiche di controllo degli accessi per mantenere la sicurezza del sistema.
+
+Affrontando questa vulnerabilità, l'organizzazione può ridurre al minimo il rischio di accesso non autorizzato, mantenere la riservatezza e l'integrità dei dati e prevenire interruzioni del sistema, riducendo così le minacce alla sicurezza informatica e preservando le operazioni aziendali.
+________________________________________________
+OpenSSH &lt; 7.2p2 X11Forwarding xauth Command Injection
+________________________________________________
+Vulnerability: OpenSSH &lt; 7.2p2 X11Forwarding xauth Command Injection
+Description: The SSH server running on affected systems is vulnerable to a security bypass issue through the X11Forwarding and xauth functionality. This can be exploited by malicious users to execute arbitrary commands with the privileges of the remote user.
+Consequences in terms of cybersecurity: This vulnerability poses a threat to the confidentiality and integrity of sensitive data as attackers can gain unauthorized access to sensitive information and modify it. Availability may also be impacted if commands are executed that disrupt system operations.
+Consequences in terms of business: Successful exploitation of this vulnerability could result in data breaches, theft of intellectual property, and disruption of critical systems and services, potentially leading to financial losses and damage to the organization's reputation.
+Recommendation: It is strongly recommended to upgrade the OpenSSH version to 7.2p2 or later to address this vulnerability.
+Affected systems: 
+- Host 1: 10.16.2.18 (SSH port 22)
+- Host 2: 192.168.2.18 (SSH port 22)
+- Host 3: 77.44.11.18 (SSH port 22)
+- Host 4: 22.34.18.18 (SSH port 22)
+________________________________________________
+Vulnerabilità: OpenSSH &lt; 7.2p2 X11Forwarding xauth Command Injection
+Descrizione: Il server SSH in esecuzione sui sistemi interessati è vulnerabile a un problema di bypass di sicurezza attraverso la funzionalità X11Forwarding e xauth. Questo può essere sfruttato dagli utenti malintenzionati per eseguire comandi arbitrari con i privilegi dell'utente remoto.
+Conseguenze in termini di sicurezza informatica: questa vulnerabilità rappresenta una minaccia per la riservatezza e l'integrità dei dati sensibili in quanto gli aggressori possono ottenere l'accesso non autorizzato alle informazioni sensibili e modificarle. La disponibilità può anche essere influenzata se vengono eseguiti comandi che interrompono le operazioni di sistema.
+Conseguenze in termini di business: il successo dello sfruttamento di questa vulnerabilità potrebbe comportare violazioni dei dati, furto di proprietà intellettuale e interruzione di sistemi e servizi critici, che potrebbero portare a perdite finanziarie e danni alla reputazione dell'organizzazione.
+Raccomandazione: Si consiglia vivamente di aggiornare la versione OpenSSH a 7.2p2 o successiva per risolvere questa vulnerabilità.
+Sistemi interessati:
+- Host 1: 10.16.2.18 (SSH port 22)
+- Host 2: 192.168.2.18 (SSH port 22)
+- Host 3: 77.44.11.18 (SSH port 22)
+- Host 4: 22.34.18.18 (SSH port 22)
+________________________________________________
+OpenSSH &lt; 7.3 Multiple Vulnerabilities
+________________________________________________
+Summary:
+
+Vulnerability "OpenSSH &lt; 7.3 Multiple Vulnerabilities" has been identified on several remote hosts, including those with IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, and 22.34.18.18 (tcp/22). These vulnerabilities pose a severity level of 3, indicating a moderate risk to both cybersecurity and business operations. In terms of cybersecurity, these weaknesses could lead to compromised confidentiality, integrity, and availability of sensitive data transmitted or accessed through the affected SSH servers. The OpenSSH server, a critical component for secure network communication, contains multiple vulnerabilities in versions prior to 7.3 that could allow for remote code execution, bypassing authentication mechanisms, and disclosure of sensitive information. The solution to mitigate these risks is to upgrade the affected SSH servers to OpenSSH version 7.3 or a later release to address these vulnerabilities. Failure to address these vulnerabilities could result in unauthorized access, data breaches, and disruption of services, potentially causing financial loss, damage to reputation, and legal penalties for non-compliance with regulatory requirements. The urgency to implement this mitigation is high due to the potential severity of the impact. It is recommended to prioritize remediation efforts accordingly.
+________________________________________________
+Sommario:
+
+Vulnerabilità "OpenSSH &lt; 7.3 Vulnerabilità multiple" è stato identificato su diversi host remoti, tra cui quelli con indirizzi IP 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, e 22.34.18.18 (tcp/22). Queste vulnerabilità rappresentano un livello di gravità di 3, indicando un rischio moderato sia per la sicurezza informatica che per le operazioni aziendali. In termini di sicurezza informatica, queste debolezze potrebbero compromettere la riservatezza, l'integrità e la disponibilità dei dati sensibili trasmessi o accessibili attraverso i server SSH interessati. Il server OpenSSH, un componente fondamentale per la comunicazione di rete sicura, contiene più vulnerabilità nelle versioni precedenti a 7.3 che potrebbero consentire l'esecuzione di codice in remoto, bypassando i meccanismi di autenticazione e la divulgazione di informazioni sensibili. La soluzione per mitigare questi rischi è aggiornare i server SSH interessati alla versione 7.3 di OpenSSH o a una versione successiva per risolvere queste vulnerabilità. La mancata risposta a queste vulnerabilità potrebbe comportare accessi non autorizzati, violazioni dei dati e interruzioni dei servizi, causando potenzialmente perdite finanziarie, danni alla reputazione e sanzioni legali per non conformità con i requisiti normativi. L’urgenza di implementare questa mitigazione è elevata a causa della potenziale gravità dell’impatto. Si raccomanda di dare priorità agli sforzi di risanamento di conseguenza.
+________________________________________________
+OpenSSH &lt; 7.4 Multiple Vulnerabilities
+________________________________________________
+The identified vulnerability affects the OpenSSH server running on several remote hosts, with a severity rating of 3. These vulnerabilities pose risks to both cybersecurity and business operations. From a cybersecurity standpoint, the vulnerabilities may compromise confidentiality by allowing unauthorized access to sensitive data, as well as integrity by enabling malicious actors to modify data without authorization. They also pose a threat to availability, as attackers could potentially disrupt or deny service by exploiting these flaws. In terms of business consequences, successful exploitation could result in data breaches, system failures, and disruptions to critical services, leading to financial losses, reputational damage, and legal liabilities. To mitigate these risks, it is recommended to upgrade the OpenSSH version to 7.4 or later. The following IP addresses and ports should be prioritized for remediation: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, and 22.34.18.18 (tcp/22).
+________________________________________________
+La vulnerabilità identificata colpisce il server OpenSSH in esecuzione su diversi host remoti, con un rating di gravità di 3. Queste vulnerabilità rappresentano un rischio sia per la sicurezza informatica che per le operazioni aziendali. Dal punto di vista della sicurezza informatica, le vulnerabilità possono compromettere la riservatezza consentendo l'accesso non autorizzato ai dati sensibili, nonché l'integrità consentendo agli attori malintenzionati di modificare i dati senza autorizzazione. Rappresentano anche una minaccia per la disponibilità, in quanto gli aggressori potrebbero potenzialmente interrompere o negare il servizio sfruttando questi difetti. In termini di conseguenze aziendali, lo sfruttamento di successo potrebbe comportare violazioni dei dati, guasti di sistema e interruzioni dei servizi critici, con conseguenti perdite finanziarie, danni alla reputazione e responsabilità legali. Per mitigare questi rischi, si consiglia di aggiornare la versione OpenSSH a 7.4 o successiva. I seguenti indirizzi IP e porte dovrebbero essere prioritari per la correzione: 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22, e 22.34.18.18 (tcp/22).
+________________________________________________
+OpenSSH &lt; 7.5 
+________________________________________________
+Vulnerability: OpenSSH version below 7.5 on affected systems is prone to an information disclosure issue, allowing unauthorized parties to obtain sensitive data through the SSH server. This vulnerability poses a medium severity (2) as it compromises the confidentiality aspect of cybersecurity.
+
+Solution: Upgrading to OpenSSH version 7.5 or higher mitigates this vulnerability, ensuring the preservation of confidential data.
+
+Impact on business: The disclosure of confidential information may result in financial loss, legal repercussions, or reputational damage. Affected servers with IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), and 22.34.18.18 (tcp/22 should be promptly patched to prevent potential data breaches and maintain data integrity and availability. It is essential to prioritize the implementation of this fix to minimize potential business disruptions.
+
+Recommendations: It is recommended to test the compatibility of the new OpenSSH version with existing systems and applications before implementing the update to avoid unintended consequences. Regular security audits and vulnerability assessments should also be conducted to ensure ongoing protection against emerging threats.
+________________________________________________
+Vulnerabilità: la versione OpenSSH inferiore a 7.5 sui sistemi interessati è soggetta a un problema di divulgazione delle informazioni, consentendo alle parti non autorizzate di ottenere dati sensibili attraverso il server SSH. Questa vulnerabilità pone una gravità media (2) in quanto compromette l'aspetto della riservatezza della sicurezza informatica.
+
+Soluzione: l'aggiornamento a OpenSSH versione 7.5 o superiore attenua questa vulnerabilità, garantendo la conservazione dei dati riservati.
+
+Impatto sul business: la divulgazione di informazioni riservate può comportare perdite finanziarie, ripercussioni legali o danni alla reputazione. Server interessati con indirizzi IP 10.6.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22) e 22.34.18.18 (tcp/22 dovrebbe essere prontamente patchato per prevenire potenziali violazioni dei dati e mantenere l'integrità e la disponibilità dei dati. È essenziale dare priorità all'implementazione di questa correzione per ridurre al minimo le potenziali interruzioni di business.
+
+Raccomandazioni: Si consiglia di testare la compatibilità della nuova versione di OpenSSH con sistemi e applicazioni esistenti prima di implementare l'aggiornamento per evitare conseguenze indesiderate. Dovrebbero essere inoltre condotti regolari audit di sicurezza e valutazioni delle vulnerabilità per garantire una protezione continua contro le minacce emergenti.
+ Lista mancanti:
+ Host: 10.16.2.18 Port:tcp/22
+________________________________________________
+OpenSSH &lt; 7.6
+________________________________________________
+Vulnerability: "OpenSSH &lt; 7.6"
+Description: The SSH server running on the remote host is susceptible to a file creation restriction bypass vulnerability, which allows an unauthorized user to create or overwrite files on the system. This issue poses a threat to confidentiality and integrity.
+
+Solution: Upgrade the OpenSSH version to 7.6 or later to address this vulnerability and mitigate the risk.
+
+Consequences in terms of cybersecurity: The vulnerability in OpenSSH &lt; 7.6 can result in an attacker gaining unauthorized access to sensitive data and modifying critical system files, compromising confidentiality and integrity.
+
+Consequences in terms of business: Unauthorized access to confidential data and modifications to critical system files can lead to data breaches, system downtime, and financial losses.
+
+Recommendations: Immediately upgrade OpenSSH to version 7.6 or higher on the following IP addresses and ports:
+
+- 10.16.2.18 (SSH) tcp/22
+- 192.168.2.18 (SSH) tcp/22
+- 77.44.11.18 (SSH) tcp/22
+- 22.34.18.18 (SSH) tcp/22
+
+Severity: The severity of this vulnerability is rated as 2 (moderate) due to the potential impact on confidentiality and integrity. Remediation should be implemented as soon as possible.
+________________________________________________
+Vulnerabilità: "OpenSSH &lt; 7.6"
+Descrizione: Il server SSH in esecuzione sull'host remoto è suscettibile di una vulnerabilità di bypass della restrizione di creazione di file, che consente a un utente non autorizzato di creare o sovrascrivere file sul sistema. Questo problema rappresenta una minaccia per la riservatezza e l'integrità.
+
+Soluzione: aggiornare la versione di OpenSSH a 7.6 o successiva per risolvere questa vulnerabilità e mitigare il rischio.
+
+Conseguenze in termini di sicurezza informatica: la vulnerabilità in OpenSSH &lt; 7.6 può comportare l'accesso non autorizzato a dati sensibili e la modifica di file di sistema critici, compromettendo la riservatezza e l'integrità.
+
+Conseguenze in termini di business: l'accesso non autorizzato ai dati riservati e le modifiche ai file di sistema critici possono portare a violazioni dei dati, tempi di inattività del sistema e perdite finanziarie.
+
+Raccomandazioni: Aggiornare immediatamente OpenSSH alla versione 7.6 o superiore sui seguenti indirizzi IP e porte:
+
+- 10.16.2.18 (SSH) tcp/22
+- 192.168.2.18 (SSH) tcp/22
+- 77.44.11.18 (SSH) tcp/22
+- 22.34.18.18 (SSH) tcp/22
+
+Gravità: la gravità di questa vulnerabilità è valutata come 2 (moderata) a causa del potenziale impatto sulla riservatezza e l'integrità. La riparazione dovrebbe essere attuata il prima possibile.
+________________________________________________
+OpenSSH LoginGraceTime / MaxStartups DoS
+________________________________________________
+Vulnerability: The OpenSSH LoginGraceTime and MaxStartups settings on multiple remote SSH servers allow for a denial of service (DoS) attack. This issue arises due to the combination of LoginGraceTime, which limits the time a user has to connect to the server, and MaxStartups, which limits the number of concurrent connection attempts. Attackers can exploit this by repeatedly failing to authenticate with a large number of login attempts within the LoginGraceTime window, effectively exhausting the MaxStartups limit and rendering the servers unavailable to legitimate users.
+
+Consequences in terms of cybersecurity: This vulnerability poses a threat to the availability of the servers, as it can cause disruption to the SSH service and prevent authorized users from accessing the systems. It also affects integrity, as failed authentication attempts may result in an increase in failed login attempts being recorded, potentially triggering security alerts or logs.
+
+Consequences in terms of business: Unavailability of critical systems can result in downtime and decreased productivity, leading to financial loss and damage to the organization's reputation. This vulnerability may also increase the workload on other network resources, such as firewalls or load balancers, as they attempt to handle excess traffic.
+
+Solution: Upgrading to OpenSSH 6.2, which includes improved LoginGraceTime and MaxStartups handling, and reviewing the associated server configuration settings can mitigate the risk. This version provides increased protection against brute force attacks and reduces the potential for service disruption.
+
+Recommended action: The IP addresses 10.16.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22), and 22.34.18.18 (tcp/22 should be reviewed for the presence of affected SSH servers and updated with the latest OpenSSH version, along with a review of LoginGraceTime and MaxStartups settings to ensure optimal security and performance. Severity: 2 (moderate).
+________________________________________________
+Vulnerabilità: le impostazioni OpenSSH LoginGraceTime e MaxStartup su più server SSH remoti consentono un attacco Denial of Service (DoS). Questo problema si verifica a causa della combinazione di LoginGraceTime, che limita il tempo di connessione di un utente al server, e MaxStartups, che limita il numero di tentativi di connessione simultanei. Gli attaccanti possono sfruttare questo problema ripetutamente non riuscendo ad autenticarsi con un gran numero di tentativi di accesso all'interno della finestra LoginGraceTime, esaurendo efficacemente il limite MaxStartups e rendendo i server non disponibili agli utenti legittimi.
+
+Conseguenze in termini di sicurezza informatica: questa vulnerabilità rappresenta una minaccia per la disponibilità dei server, in quanto può causare interruzioni del servizio SSH e impedire agli utenti autorizzati di accedere ai sistemi. Colpisce anche l'integrità, poiché i tentativi di autenticazione falliti possono comportare un aumento dei tentativi di accesso non riusciti, potenzialmente attivando avvisi di sicurezza o registri.
+
+Conseguenze in termini di business: l'indisponibilità di sistemi critici può comportare tempi di inattività e una diminuzione della produttività, portando a perdite finanziarie e danni alla reputazione dell'organizzazione. Questa vulnerabilità può anche aumentare il carico di lavoro su altre risorse di rete, come firewall o bilanciamento del carico, mentre tentano di gestire il traffico in eccesso.
+
+Soluzione: l'aggiornamento a OpenSSH 6.2, che include una migliore gestione di LoginGraceTime e MaxStartup e la revisione delle impostazioni di configurazione del server associate possono mitigare il rischio. Questa versione offre una maggiore protezione contro gli attacchi di forza bruta e riduce il potenziale di interruzione del servizio.
+
+Azione consigliata: Gli indirizzi IP 10.6.2.18 (tcp/22), 192.168.2.18 (tcp/22), 77.44.11.18 (tcp/22) e 22.34.18.18 (tcp/22 dovrebbe essere rivisto per la presenza di server SSH interessati e aggiornato con l'ultima versione OpenSSH, insieme a una revisione delle impostazioni di LoginGraceTime e MaxStartup per garantire la sicurezza e le prestazioni ottimali. Gravità: 2 (moderata).
+ Lista mancanti:
+ Host: 10.16.2.18 Port:tcp/22
+________________________________________________
+OpenSSH &lt; 5.2 CBC Plaintext Disclosure
+________________________________________________
+Vulnerability: OpenSSH &lt; 5.2 CBC Plaintext Disclosure
+
+Description: The SSH service running on the remote hosts with versions prior to OpenSSH 5.2 is affected by an information disclosure vulnerability. During a connection, the use of CBC (Cipher Block Chaining) encryption algorithm allows an attacker to manipulate network traffic and extract plaintext data.
+
+Consequences in terms of cybersecurity: The vulnerability compromises the confidentiality of data transmitted over the SSH connection, potentially revealing sensitive information such as user credentials, system configurations, and other confidential data.
+
+Consequences in terms of the business: The disclosure of confidential data could result in unauthorized access to systems and networks, data breaches, and loss of intellectual property, leading to financial and reputational damage.
+
+Severity: Severity 2 (moderate) due to the potential for information disclosure and impact on confidentiality.
+
+Recommendation: Upgrade the OpenSSH service to version 5.2 or later to address this vulnerability and ensure the use of strong encryption algorithms to mitigate the risk of plaintext data disclosure.
+
+Affected Hosts:
+- 10.16.2.18 (TCP port 22)
+- 192.168.2.18 (TCP port 22)
+- 77.44.11.18 (TCP port 22)
+- 22.34.18.18 (TCP port 22)
+________________________________________________
+Vulnerabilità: OpenSSH &lt; 5.2 CBC Plaintext Disclosure
+
+Descrizione: Il servizio SSH in esecuzione sugli host remoti con versioni precedenti a OpenSSH 5.2 è influenzato da una vulnerabilità di divulgazione delle informazioni. Durante una connessione, l'uso dell'algoritmo di crittografia CBC (Cipher Block Chaining) consente a un utente malintenzionato di manipolare il traffico di rete ed estrarre dati in chiaro.
+
+Conseguenze in termini di sicurezza informatica: la vulnerabilità compromette la riservatezza dei dati trasmessi attraverso la connessione SSH, rivelando potenzialmente informazioni sensibili come credenziali utente, configurazioni di sistema e altri dati riservati.
+
+Conseguenze in termini di attività: la divulgazione di dati riservati potrebbe comportare l'accesso non autorizzato a sistemi e reti, violazioni dei dati e perdita di proprietà intellettuale, che porta a danni finanziari e reputazionali.
+
+Gravità: gravità 2 (moderata) a causa del potenziale di divulgazione delle informazioni e dell'impatto sulla riservatezza.
+
+Raccomandazione: aggiornare il servizio OpenSSH alla versione 5.2 o successiva per risolvere questa vulnerabilità e garantire l'uso di algoritmi di crittografia forti per mitigare il rischio di divulgazione dei dati in chiaro.
+
+Host interessati:
+- 10.16.2.18 (TCP port 22)
+- 192.168.2.18 (TCP port 22)
+- 77.44.11.18 (TCP port 22)
+- 22.34.18.18 (TCP port 22)
+________________________________________________
+SNMP &apos;GETBULK&apos; Reflection DDoS
+________________________________________________
+Summary: A vulnerability, known as SNMP 'GETBULK' Reflection DDoS, has been identified in the remote SNMP daemon that enables a reflected distributed denial of service attack. This issue poses a medium severity rating of 2 due to its potential impact on both cybersecurity and business operations. The SNMP service may be utilized to extract sensitive data, compromise confidentiality, and disrupt network availability. To mitigate this vulnerability, it is recommended to disable the SNMP service if it is not being utilized. Alternatively, access to the service should be restricted and monitored, and the default 'public' community string should be changed. In order to prevent potential attacks, the following IP addresses and ports should be blocked: 10.16.2.14 udp/161, 10.16.2.13 udp/161, 10.16.2.12 udp/161, 192.168.2.14 udp/161, 192.168.2.13 udp/161, 192.168.2.12 udp/161, 77.44.11.14 udp/161, 77.44.11.13 udp/161, 77.44.11.12 udp/161, 22.34.18.14 udp/161, 22.34.18.13 udp/161, and 22.34.18.12 udp/161.
+________________________________________________
+Riepilogo: Una vulnerabilità, nota come SNMP 'GETBULK' Reflection DDoS, è stata identificata nel demone SNMP remoto che consente un attacco di negazione del servizio distribuito riflesso. Questo problema pone un rating di gravità medio di 2 a causa del suo potenziale impatto sia sulla sicurezza informatica che sulle operazioni aziendali. Il servizio SNMP può essere utilizzato per estrarre dati sensibili, compromettere la riservatezza e interrompere la disponibilità della rete. Per mitigare questa vulnerabilità, si consiglia di disabilitare il servizio SNMP se non viene utilizzato. In alternativa, l'accesso al servizio dovrebbe essere limitato e monitorato e la stringa di comunità "pubblica" predefinita dovrebbe essere modificata. Per prevenire potenziali attacchi, è necessario bloccare i seguenti indirizzi IP e porte: 10.16.2.14 udp/161, 10.16.2.13 udp/161, 10.16.2.12 udp/161, 192.168.2.14 udp/161, 192.168.16.2.13 udp/161, 192.168.2.12 udp/161, 77.44.11.14 udp/161.
+ Lista mancanti:
+ Host: 192.168.2.13 Port:udp/161
+  Host: 77.44.11.13 Port:udp/161
+  Host: 77.44.11.12 Port:udp/161
+  Host: 22.34.18.14 Port:udp/161
+  Host: 22.34.18.13 Port:udp/161
+  Host: 22.34.18.12 Port:udp/161
+________________________________________________
+SSL Version 2 and 3 Protocol Detection
+________________________________________________
+Vulnerability: SSL Version 2 and 3 Protocol Detection
+
+Description: The remote service utilizes outdated SSL protocols (version 2.0 and 3.0) for encryption, which are vulnerable to critical security threats such as POODLE (Padding Oracle On Downgraded Legacy Encryption) and FREAK (Factoring Attack on RSA-EXPORT Keys) attacks. These protocols have been deprecated due to their weak encryption algorithms and easily exploitable vulnerabilities.
+
+Consequences in terms of cybersecurity: The use of SSL version 2.0 and 3.0 puts the confidentiality and integrity of transmitted data at high risk, as these protocols are susceptible to man-in-the-middle attacks, data tampering, and decryption by attackers. They also pose a threat to the availability of services as they can cause performance degradation due to their outdated encryption algorithms.
+
+Consequences in terms of business: The disclosure of sensitive information, loss of customer trust, and potential financial loss can result from data breaches, compromised privacy, and damage to the company's reputation.
+
+Severity: 4 (High)
+
+Solution: It is recommended to consult the application's documentation to disable SSL version 2.0 and 3.0 and replace them with the more secure Transport Layer Security (TLS) version 1.2 (with approved cipher suites) or higher. This will mitigate the security risks and improve overall cybersecurity.
+
+IP addresses and ports:
+- 10.16.2.3: tcp/443
+- 10.16.2.2: tcp/443
+- 10.16.2.1: tcp/443
+- 192.168.2.3: tcp/443
+- 192.168.2.2: tcp/443
+- 192.168.2.1: tcp/443
+- 77.44.11.3: tcp/443
+- 77.44.11.2: tcp/443
+- 77.44.11.1: tcp/443
+- 22.34.18.3: tcp/443
+- 22.34.18.2: tcp/443
+- 22.34.18.1: tcp/443
+________________________________________________
+Vulnerabilità: SSL versione 2 e 3 Protocollo di rilevamento
+
+Descrizione: Il servizio remoto utilizza protocolli SSL obsoleti (versione 2.0 e 3.0) per la crittografia, che sono vulnerabili a minacce alla sicurezza critiche come gli attacchi POODLE (Pading Oracle On Downgraded Legacy Encryption) e FREAK (Factoring Attack on RSA-EXPORT Keys). Questi protocolli sono stati deprecati a causa dei loro algoritmi di crittografia deboli e vulnerabilità facilmente sfruttabili.
+
+Conseguenze in termini di sicurezza informatica: l'uso di SSL versione 2.0 e 3.0 mette a rischio la riservatezza e l'integrità dei dati trasmessi, in quanto questi protocolli sono suscettibili di attacchi man-in-the-middle, manomissione dei dati e decrittografia da parte degli aggressori. Inoltre, rappresentano una minaccia per la disponibilità dei servizi in quanto possono causare un degrado delle prestazioni a causa dei loro algoritmi di crittografia obsoleti.
+
+Conseguenze in termini di attività: la divulgazione di informazioni sensibili, la perdita di fiducia dei clienti e la potenziale perdita finanziaria possono derivare da violazioni dei dati, compromissione della privacy e danni alla reputazione dell'azienda.
+
+Severità: 4 (alta)
+
+Solution: It is recommended to consult the application's documentation to disable SSL version 2.0 and 3.0 and replace them with the more secure Transport Layer Security (TLS) version 1.2 (with approved cipher suites) or higher. Ciò ridurrà i rischi per la sicurezza e migliorerà la sicurezza informatica complessiva.
+
+Indirizzi IP e porte:
+- 10.16.2.3: tcp/443
+- 10.16.2.2: tcp/443
+- 10.16.2.1: tcp/443
+- 192.168.2.3: tcp/443
+- 192.168.2.2: tcp/443
+- 192.168.2.1: tcp/443
+- 77.44.11.3: tcp/443
+- 77.44.11.2: tcp/443
+- 77.44.11.1: tcp/443
+- 22.34.18.3: tcp/443
+- 22.34.18.2: tcp/443
+- 22.34.18.1: tcp/443
+________________________________________________
+SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE)
+________________________________________________
+The identified vulnerability, SSLv3 Padding Oracle On Downgraded Legacy Encryption (POODLE), allows attackers to extract sensitive information from remote hosts with SSL/TLS-enabled services. This issue poses a moderate risk (severity 2) as it compromises the confidentiality of data transmitted over SSLv3 connections. The impact on business operations may vary depending on the nature of the data being transmitted, as confidential information could be disclosed, leading to potential data breaches and loss of intellectual property or customer trust. To mitigate this vulnerability, services that require SSLv3 support should implement the Transport Layer Security (TLS) Fallback Signaling Countermeasures (TLS FSCV) mechanism until SSLv3 can be fully disabled. This solution addresses the cybersecurity concern of compromised integrity and confidentiality.
+
+Affected hosts include 10.16.2.3 (tcp/443), 10.16.2.2 (tcp/443), 10.16.2.1 (tcp/443), 192.168.2.3 (tcp/443), 192.168.2.2 (tcp/443), 192.168.2.1 (tcp/443), 77.44.11.3 (tcp/443), 77.44.11.2 (tcp/443), 77.44.11.1 (tcp/443), 22.34.18.3 (tcp/443), 22.34.18.2 (tcp/443), and 22.34.18.1 (tcp/443. Disabling SSLv3 and implementing TLS FSCV will mitigate the vulnerability and maintain the availability of these services, ensuring business continuity.
+________________________________________________
+La vulnerabilità identificata, SSLv3 Padding Oracle On Downgraded Legacy Encryption (POODLE), consente agli aggressori di estrarre informazioni sensibili da host remoti con servizi abilitati SSL/TLS. Questo problema pone un rischio moderato (gravità 2) in quanto compromette la riservatezza dei dati trasmessi tramite connessioni SSLv3. L'impatto sulle operazioni aziendali può variare a seconda della natura dei dati trasmessi, poiché potrebbero essere divulgate informazioni riservate, che portano a potenziali violazioni dei dati e perdita di proprietà intellettuale o fiducia dei clienti. Per mitigare questa vulnerabilità, i servizi che richiedono il supporto SSLv3 dovrebbero implementare il meccanismo TLS (Transport Layer Security) Fallback Signaling Countermeasures (TLS FSCV) fino a quando SSLv3 non può essere completamente disabilitato. Questa soluzione affronta la questione della sicurezza informatica in termini di integrità e riservatezza compromesse.
+
+Gli host interessati includono 10.16.2.3 (tcp/443), 10.16.2.2 (tcp/443), 10.16.2.1 (tcp/443), 192.168.2.3 (tcp/443), 192.168.2.2 (tcp/443), 192.168.2.1 (tcp/443), 77.44.1.1 (tcp/443), 74.1.1 (tcp/443), 74.1. La disattivazione di SSLv3 e l’implementazione di TLS FSCV mitigherà la vulnerabilità e manterrà la disponibilità di questi servizi, garantendo la continuità operativa.
+ Lista mancanti:
+ Host: 77.44.11.3 Port:tcp/443
+  Host: 77.44.11.2 Port:tcp/443
+  Host: 77.44.11.1 Port:tcp/443
+  Host: 22.34.18.3 Port:tcp/443
+  Host: 22.34.18.2 Port:tcp/443
+  Host: 22.34.18.1 Port:tcp/443
+________________________________________________
+SSL RC4 Cipher Suites Supported (Bar Mitzvah)
+________________________________________________
+Vulnerability: SSL RC4 Cipher Suites Supported (Bar Mitzvah)
+
+Description: The remote service under investigation supports the use of the RC4 cipher in its SSL/TLS implementation, which has been identified as an outdated and weak encryption algorithm. This vulnerability allows for potential data leakage and eavesdropping by attackers with access to network traffic.
+
+Cybersecurity Consequences: The use of RC4 ciphers compromises the confidentiality and integrity of sensitive data transmitted over the network, as this algorithm is prone to cryptographic attacks such as the RC4 Stream Cipher Attack and the Sweet32 vulnerability. Attackers can gain unauthorized access to confidential information, making this vulnerability a significant threat to cybersecurity.
+
+Business Consequences: The exposure of confidential data can lead to financial and reputational damages, as well as breaches of regulatory compliance requirements. It could result in loss of customer trust, legal penalties, and damages to the organization's reputation and brand value.
+
+Severity: 2 (Moderate)
+
+Recommendation: To mitigate this vulnerability, the affected application should be reconfigured to avoid the use of RC4 ciphers. Organizations should consider implementing TLS 1.2 with AES-GCM suites, subject to browser and web server support.
+
+Affected Systems:
+
+- 10.16.2.3 (TCP port 443)
+- 10.16.2.2 (TCP port 443)
+- 10.16.2.1 (TCP port 443)
+- 192.168.2.3 (TCP port 443)
+- 192.168.2.2 (TCP port 443)
+- 192.168.2.1 (TCP port 443)
+- 77.44.11.3 (TCP port 443)
+- 77.44.11.2 (TCP port 443)
+- 77.44.11.1 (TCP port 443)
+- 22.34.18.3 (TCP port 443)
+- 22.34.18.2 (TCP port 443)
+- 22.34.18.1 (TCP port 443
+
+Organizations are advised to prioritize the implementation of recommended measures to mitigate this vulnerability in a timely and efficient manner to minimize potential impacts.
+________________________________________________
+Vulnerabilità: SSL RC4 Cipher Suites Supportato (Bar Mitzvah)
+
+Descrizione: Il servizio remoto in fase di indagine supporta l'uso del cifrario RC4 nella sua implementazione SSL / TLS, che è stato identificato come un algoritmo di crittografia obsoleto e debole. Questa vulnerabilità consente potenziali perdite di dati e intercettazioni da parte di aggressori con accesso al traffico di rete.
+
+Conseguenze della sicurezza informatica: l'uso di cifrari RC4 compromette la riservatezza e l'integrità dei dati sensibili trasmessi sulla rete, poiché questo algoritmo è soggetto ad attacchi crittografici come l'attacco cifrario RC4 Stream e la vulnerabilità Sweet32. Gli aggressori possono ottenere l'accesso non autorizzato alle informazioni riservate, rendendo questa vulnerabilità una minaccia significativa per la sicurezza informatica.
+
+Conseguenze aziendali: l'esposizione di dati riservati può portare a danni finanziari e reputazionali, nonché violazioni dei requisiti di conformità alle normative. Potrebbe comportare la perdita di fiducia dei clienti, sanzioni legali e danni alla reputazione e al valore del marchio dell'organizzazione.
+
+Severità: 2 (moderato)
+
+Raccomandazione: per mitigare questa vulnerabilità, l'applicazione interessata deve essere riconfigurata per evitare l'uso di cifrari RC4. Le organizzazioni dovrebbero prendere in considerazione l'implementazione di TLS 1.2 con le suite AES-GCM, soggetto al supporto del browser e del server web.
+
+Sistemi interessati:
+
+- 10.16.2.3 (TCP port 443)
+- 10.16.2.2 (TCP port 443)
+- 10.16.2.1 (TCP port 443)
+- 192.168.2.3 (TCP port 443)
+- 192.168.2.2 (TCP port 443)
+- 192.168.2.1 (TCP port 443)
+- 77.44.11.3 (TCP port 443)
+- 77.44.11.2 (TCP port 443)
+- 77.44.11.1 (TCP port 443)
+- 22.34.18.3 (TCP port 443)
+- 22.34.18.2 (TCP port 443)
+- 22.34.18.1 (TCP port 443
+
+Si consiglia alle organizzazioni di dare priorità all'implementazione delle misure raccomandate per mitigare questa vulnerabilità in modo tempestivo ed efficiente per ridurre al minimo i potenziali impatti.
+________________________________________________
+SSL Weak Cipher Suites Supported
+________________________________________________
+Vulnerability: SSL Weak Cipher Suites Supported
+Description: The remote service being accessed via IP addresses 10.16.2.3 (TCP port 443), 10.16.2.2 (TCP port 443), 10.16.2.1 (TCP port 443), 192.168.2.3 (TCP port 443), 192.168.2.2 (TCP port 443), 192.168.2.1 (TCP port 443), 77.44.11.3 (TCP port 443), 77.44.11.2 (TCP port 443), 77.44.11.1 (TCP port 443), 22.34.18.3 (TCP port 443), 22.34.18.2 (TCP port 443, and 22.34.18.1 (TCP port 443 all support weak SSL ciphers, which poses a security risk as these ciphers can be easily cracked or compromised, weakening data confidentiality.
+
+Severity: 2 (Moderate)
+
+Recommended Solution: It is recommended to reconfigure the affected application to avoid the use of weak SSL ciphers to mitigate this vulnerability. This can be achieved through updating the application or server configurations to disable or remove support for weak cipher suites, and ensuring that strong ciphers are enforced instead.
+
+Consequences in terms of cybersecurity: The use of weak SSL ciphers can lead to confidentiality breaches by allowing attackers to decrypt sensitive data transmitted between the client and server, as well as enabling man-in-the-middle attacks.
+
+Consequences in terms of business: The disclosure of confidential information, such as user credentials or sensitive business data, can result in financial losses, reputational damage, and legal penalties. It can also lead to a loss of customer trust, as well as compliance violations for organizations subject to regulatory requirements, such as GDPR or PCI-DSS.
+
+Impacted IP addresses: 10.16.2.3, 10.16.2.2, 10.16.2.1, 192.168.2.3, 192.168.2.2, 192.168.2.1, 77.44.11.3, 77.44.11.2, 77.44.11.1, 22.34.18.3, 22.34.18.2, and 22.34.18.1 (TCP port 443).
+________________________________________________
+Vulnerabilità: SSL Weak Cipher Suites Supportato
+Descrizione: Il servizio remoto è stato compromesso tramite indirizzi IP 10.16.2.3 (porta TCP 443), 10.16.2.2 (porta TCP 443), 10.16.2.1 (porta TCP 443), 192.168.2.3 (porta TCP 443), 192.168.2.2 (porta TCP 443), 192.168.2.1 (porta TCP 443), 77.418.11.3 (porta TCP 443), 77.4.1 (porta TCP 443),1
+
+Severità: 2 (moderato)
+
+Soluzione consigliata: si consiglia di riconfigurare l'applicazione interessata per evitare l'uso di cifrari SSL deboli per mitigare questa vulnerabilità. Ciò può essere ottenuto aggiornando le configurazioni dell'applicazione o del server per disabilitare o rimuovere il supporto per le suite di cifratura deboli e assicurando che vengano invece applicati cifrari forti.
+
+Conseguenze in termini di sicurezza informatica: l'uso di cifrari SSL deboli può portare a violazioni della riservatezza consentendo agli aggressori di decrittografare i dati sensibili trasmessi tra il client e il server, oltre a consentire attacchi man-in-the-middle.
+
+Conseguenze in termini di attività: la divulgazione di informazioni riservate, come le credenziali dell'utente o dati aziendali sensibili, può comportare perdite finanziarie, danni alla reputazione e sanzioni legali. Può anche portare a una perdita di fiducia dei clienti, nonché a violazioni della conformità per le organizzazioni soggette a requisiti normativi, come GDPR o PCI-DSS.
+
+Indirizzi IP impattati: 10.16.2.3, 10.16.2.2, 10.16.2.1, 192.168.2.3, 192.168.2.1, 77.44.1.1, 77.44.1.1, 22.34.18.2, 22.34.18.2 e 22.34.18.1 (porta TCP 443).
+ Lista mancanti:
+ Host: 77.44.11.3 Port:tcp/443
+  Host: 77.44.11.2 Port:tcp/443
+  Host: 77.44.11.1 Port:tcp/443
+  Host: 22.34.18.3 Port:tcp/443
+________________________________________________
+SSL Certificate Expiry
+________________________________________________
+Vulnerability: SSL Certificate Expiry
+Description: The remote server's SSL certificate has already expired, which poses a risk to confidentiality as unencrypted data may be intercepted and read by unauthorized parties. Integrity is compromised as the certificate cannot verify the authenticity of the server, and availability may be affected as some web browsers may display warnings or errors, leading to user distrust and potential service disruption.
+Business Impact: Loss of customer trust, decreased website traffic, and potential data breaches could result in financial and reputational damage.
+Recommendation: Purchase or generate a new SSL certificate to replace the existing one.
+
+Affected Hosts:
+- 10.16.2.3 (TCP/443)
+- 10.16.2.2 (TCP/443)
+- 10.16.2.1 (TCP/443)
+- 192.168.2.3 (TCP/443)
+- 192.168.2.2 (TCP/443)
+- 192.168.2.1 (TCP/443)
+- 77.44.11.3 (TCP/443)
+- 77.44.11.2 (TCP/443)
+- 77.44.11.1 (TCP/443)
+- 22.34.18.3 (TCP/443)
+- 22.34.18.2 (TCP/443)
+- 22.34.18.1 (TCP/443
+
+Severity: 2 (Moderate)
+
+The expired SSL certificate poses a moderate risk as it affects multiple hosts, and if not resolved, it could lead to data breaches, decreased customer trust, and potential service disruption. It is recommended to address this vulnerability as soon as possible to mitigate the impact on confidentiality, integrity, and availability.
+________________________________________________
+Vulnerabilità: scadenza certificato SSL
+Descrizione: Il certificato SSL del server remoto è già scaduto, il che pone un rischio per la riservatezza in quanto i dati non crittografati possono essere intercettati e letti da parti non autorizzate. L'integrità è compromessa in quanto il certificato non può verificare l'autenticità del server e la disponibilità potrebbe essere influenzata in quanto alcuni browser Web potrebbero visualizzare avvisi o errori, causando sfiducia dell'utente e potenziali interruzioni del servizio.
+Impatto aziendale: perdita di fiducia dei clienti, diminuzione del traffico sul sito Web e potenziali violazioni dei dati potrebbero causare danni finanziari e reputazionali.
+Raccomandazione: acquistare o generare un nuovo certificato SSL per sostituire quello esistente.
+
+Host interessati:
+- 10.16.2.3 (TCP/443)
+- 10.16.2.2 (TCP/443)
+- 10.16.2.1 (TCP/443)
+- 192.168.2.3 (TCP/443)
+- 192.168.2.2 (TCP/443)
+- 192.168.2.1 (TCP/443)
+- 77.44.11.3 (TCP/443)
+- 77.44.11.2 (TCP/443)
+- 77.44.11.1 (TCP/443)
+- 22.34.18.3 (TCP/443)
+- 22.34.18.2 (TCP/443)
+- 22.34.18.1 (TCP/443
+
+Severità: 2 (moderato)
+
+Il certificato SSL scaduto pone un rischio moderato in quanto colpisce più host e, se non risolto, potrebbe portare a violazioni dei dati, diminuzione della fiducia dei clienti e potenziali interruzioni del servizio. Si consiglia di affrontare questa vulnerabilità il più presto possibile per mitigare l'impatto sulla riservatezza, l'integrità e la disponibilità.
+
+
+ tempo di esecuzione del programma: 123,58 min
